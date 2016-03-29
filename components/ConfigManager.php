@@ -15,14 +15,31 @@ namespace app\components;
  */
 class ConfigManager {
   
+  private $server;
+  private $ssl;
+  private $headers;
+  
+
   public function getTransifexUrl() {
     return \Yii::$app->params['transifexUrl'];
   }
-  
+
   public function getTransifexSettings() {
-    return $settings = ['user' => "", 'password' => ""];
+    $user = getenv("TRANSIFEX_USER");
+    $pass = getenv("TRANSIFEX_PASS");
+    return $settings = ['user' => $user, 'password' => $pass];
+  }
+
+  public function getDefaultServer() {
+    return $this->server;
   }
   
+  public function getSSL() {
+    return $this->ssl;
+  }
   
-  
+  public function getAllHeaders() {
+    return $this->headers;
+  }
+
 }

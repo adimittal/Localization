@@ -26,6 +26,8 @@ class Transifex extends AbstractModel {
     $this->transifexUrl = $this->configManager->getTransifexUrl();
     $this->settings = $this->configManager->getTransifexSettings();
     if (empty($this->settings['user']) || empty($this->settings['password'])) {
+      echo "Transifex Credentials missing. Please set in your apache environment TRANSIFEX_USER and TRANSIFEX_PASS then try again.";
+      die;
       throw new RuntimeException('Transifex Credentials missing');
     }
   }

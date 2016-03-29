@@ -2,6 +2,11 @@
 
 namespace app\models\baseHttp;
 
+use JsonSerializable;
+use app\components\ConfigManager;
+
+use stdClass;
+
 class Request implements JsonSerializable {
 
   protected $mf;
@@ -32,7 +37,7 @@ class Request implements JsonSerializable {
   protected $withPartner;
 
   public function __construct() {
-    $this->configManager = ConfigManager::getInstance();
+    $this->configManager = new ConfigManager();
   }
 
   public function jsonSerialize() {
@@ -293,6 +298,10 @@ class Request implements JsonSerializable {
 
   public function getActionUrl() {
     return $this->url;
+  }
+  
+  public function setActionUrl($url) {
+    $this->url = $url;
   }
 
   public function getQuery() {

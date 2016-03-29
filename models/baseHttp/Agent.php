@@ -2,6 +2,11 @@
 
 namespace app\models\baseHttp;
 
+use app\components\Timer;
+use app\components\AppLog;
+
+use Yii;
+
 /**
  * Description of Agent: This class is used to perform Create Read
  * Update Delete (CRUD) operations using curl
@@ -33,19 +38,6 @@ class Agent {
     $this->ssl = $this->configManager->getSSL();
     $this->headers = $this->configManager->getAllHeaders(); //Yii::app()->request->getAllHeaders();
     $this->timer = new Timer();
-  }
-
-  /*
-   * The Model Factory is extremely heavyweight due to ModelBuilder
-   * We're not going to store it in any model any more to reduce the
-   * memory footpring of the App. As an example the SecurityQuestion
-   * object only has a few methods but come in at a huge 5.2MB serialized
-   * as JSON.
-   */
-
-  protected function mf() {
-    $factory = Factory::getInstance();
-    return $factory->createModelFactory();
   }
 
   protected function setCurlOptions($option, $value, $code) {
@@ -213,7 +205,7 @@ class Agent {
         'curlerrno' => $this->errorNo,
       );
       $resp_base64 = base64_encode(json_encode($response));
-      Yii::log("BEGIN:METHOD=$method:RESPCODE=$resp_code:REQID=$reqid:URL=$url:REQ_B64=$req_base64:RESP_B64=$resp_base64:END", CLogger::LEVEL_ERROR, "http_agent");
+      Yii::error("BEGIN:METHOD=$method:RESPCODE=$resp_code:REQID=$reqid:URL=$url:REQ_B64=$req_base64:RESP_B64=$resp_base64:END", "http_agent");
     }
 
     $this->concurrentLoginNotAllowed();
@@ -231,7 +223,7 @@ class Agent {
   }
 
   protected function createResponse() {
-    return $this->mf()->createResponse($this->curlResult, $this->errorNo, $this->curlInfo);
+    return new Response($this->curlResult, $this->errorNo, $this->curlInfo);
   }
 
   protected function logCurlOptions() {

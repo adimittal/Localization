@@ -2,6 +2,8 @@
 
 namespace app\models\baseHttp;
 
+use app\components\ConfigManager;
+
 class InvokerData {
 
   public $configManager;
@@ -47,7 +49,7 @@ class InvokerData {
     $this->genericUrlVariable = $genericUrlVariable;
     $this->genericPort = $genericPort;
     $this->withStringify = $withStringify;
-    $this->configManager = ConfigManager::getInstance();
+    $this->configManager = new ConfigManager();
   }
 
   /**

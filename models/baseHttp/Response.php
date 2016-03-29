@@ -2,6 +2,9 @@
 
 namespace app\models\baseHttp;
 
+use app\models\baseHttp\RequestError;
+use app\components\AppLog;
+
 /**
  * Description of Response
  *
@@ -30,27 +33,13 @@ class Response {
   public $groups;
   public $policy;
 
-  public function __construct(PartnerFactory $pf, ComponentFactory $cf, $rawData, $curlErrNo, $curlInfo) {
+  public function __construct($rawData, $curlErrNo, $curlInfo) {
     $this->rawData = $rawData;
     $this->curlErrNo = $curlErrNo;
     $this->curlInfo = $curlInfo;
-    $this->pf = $pf;
-    $this->cf = $cf;
 
-    $this->appLog = $this->cf->createAppLog();
+    $this->appLog = new AppLog();
     $this->setError();
-  }
-
-  /*
-   * The Model Factory is extremely heavyweight due to ModelBuilder
-   * We're not going to store it in any model any more to reduce the
-   * memory footpring of the App. As an example the SecurityQuestion
-   * object only has a few methods but come in at a huge 5.2MB serialized
-   * as JSON.
-   */
-  protected function mf() {
-    $factory = Factory::getInstance();
-    return $factory->createModelFactory();
   }
 
   public function setRawData($rawData) {
@@ -84,10 +73,10 @@ class Response {
   }
 
   public function setError() {
-    $this->errObj = $this->mf()->createRequestError('', 0, '');
+    $this->errObj = new RequestError(0, '', '');
 
     if ($this->rawData === false || $this->curlErrNo) {
-      $this->errObj = $this->mf()->createRequestError('saas.req.curl_error', $this->curlErrNo, "Error: Internal Curl Error: ");
+      $this->errObj = new RequestError($this->curlErrNo, 'saas.req.curl_error', "Error: Internal Curl Error: ");
       $this->appLog->log("Curl Error = " . $this->curlErrNo, 'error', 'application');
       return;
     }
@@ -103,19 +92,18 @@ class Response {
       $jsonerr = json_last_error();
       if ($jsonerr) {
         $this->appLog->log(print_r($this->rawData, true));
-        $this->errObj = $this->mf()->createRequestError('saas.req.json_error', $jsonerr, "Error: Internal JSON Parsing error: " . $this->rawData);
+        $this->errObj = new RequestError( $jsonerr, 'saas.req.json_error', "Error: Internal JSON Parsing error: " . $this->rawData);
         return;
       }
 
       if ($this->json === null) {
-        $this->errObj = $this->mf()->createRequestError('saas.req.json_error.null', 1, "Error: JSON from server was empty");
+        $this->errObj = new RequestError( 1, 'saas.req.json_error.null', "Error: JSON from server was empty");
         return;
       }
 
       if (is_object($this->json)) {
         if (property_exists($this->json, 'error')) {
-          $this->errObj = $this->mf()->createRequestError(
-            $this->json->error->code, 1, $this->json->error->message);
+          $this->errObj = new RequestError(1, $this->json->error->code, $this->json->error->message);
         }
         $this->data = $this->json;
       }
@@ -237,9 +225,5 @@ class Response {
   public function getCurlInfo() {
     return $this->curlInfo;
   }
-
-
-
-
 
 }

@@ -2,67 +2,49 @@
 
 namespace app\components;
 
+use Yii;
+use yii\base\Component;
+
 /**
  * AppLog class
  * The following class abstracts data stored in Yii::log() and Yii::trace()
  * @author Eugene Voznesensky
  */
-class AppLog {
+class AppLog extends Component {
+  private static $dev = 0;
 
-  private static $dev = false;
-  private static $hostname;
-  private static $servername;
-  private static $requestURI;
-  private static $fullURI;
-  private static $frameNo = 1;
-  
-  public static function log($msg = '', $level = CLogger::LEVEL_INFO, $category = 'application', $debug = false, $origin = null) {
-    if (!is_string($msg)) {
-      $msg = print_r($msg, true);
-    }
+  public static function log($msg = '', $level = '', $category = 'application', $debug = false, $origin = null) {
     self::$dev = $debug;
-    self::$hostname = gethostname();
-    self::$servername = $_SERVER['SERVER_NAME'];
-    self::$requestURI = $_SERVER['REQUEST_URI'];
-    self::$fullURI = self::full_url(false);
-    self::clean($msg);
+    $msg = print_r($msg, true);
+    //self::clean($msg);
 
-    if ($debug) {
+    if($debug) {
       Yii::log(print_r(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS), true));
     }
-    if (!$origin) {
+    $frameNo = 1;
+    if(!$origin) {
       $callers = debug_backtrace();
-      $origin = self::calc_origin($callers);
-    }
-    $msg = self::$hostname . " : " . self::$fullURI . " : $origin : " . $msg;
-    Yii::log(print_r($msg, true), $level, $category);
-  }
-
-  private static function calc_origin(&$callers) {
-    $frameNo = self::$frameNo;
-    $method = $callers[$frameNo]['function'];
-    $class = 'ClassNotSet';
-    if (array_key_exists('class', $callers[$frameNo])) {
-      $class = $callers[$frameNo]['class'];
-    }
-    else {
-      if (array_key_exists('file', $callers[$frameNo])) {
-        $class = $callers[$frameNo]['file'];
+      $method  = $callers[$frameNo]['function'];
+      $class = 'ClassNotSet';
+      if(array_key_exists('class', $callers[$frameNo])) {
+        $class = $callers[$frameNo]['class'];
       }
+      else {
+        if(array_key_exists('file', $callers[$frameNo])) {
+          $class = $callers[$frameNo]['file'];
+        }
+      }
+      $line    = "LineNumberNotSet";
+      if(array_key_exists('line', $callers[$frameNo])) {
+        $line = $callers[$frameNo]['line'];
+      }
+      $origin = "Line: $line: $class->$method";
     }
-    $file = 'FileNameNotSet';
-    if (array_key_exists('file', $callers[$frameNo])) {
-      $file = $callers[$frameNo]['file'];
-    }
-    $line = "LineNumberNotSet";
-    if (array_key_exists('line', $callers[$frameNo])) {
-      $line = $callers[$frameNo]['line'];
-    }
-    return "$class->$method File: $file Line: $line:";
+    Yii::error(print_r($msg, true), $category);
   }
 
   public static function trace($msg, $category = 'application') {
-    self::clean($msg);
+   // self::clean($msg);
     Yii::trace(print_r($msg, true), $category);
   }
 
@@ -72,7 +54,7 @@ class AppLog {
    * @return type
    */
   public static function removeActionURLPairs($msg) {
-    if (self::$dev) {
+    if(self::$dev) {
       return $msg;
     }
     return preg_replace('/\[actionUrlPair\:protected\] =\> Array.*\)/isU', '', $msg);
@@ -84,14 +66,14 @@ class AppLog {
    * @return type
    */
   public static function removeAuthorizationBearer($msg) {
-    if (self::$dev) {
+    if(self::$dev) {
       return $msg;
     }
     return preg_replace('/authorization:Bearer .*/i', 'authorization:Bearer xxx', $msg);
   }
 
-  private static function clean(&$msg) {
-    if (self::$dev) {
+  public static function clean(&$msg) {
+    if(self::$dev) {
       return $msg;
     }
     $cleanMsg = '';
@@ -104,14 +86,12 @@ class AppLog {
         // 2. Replace
         $line = $patternMatches[1] . '[' . $patternMatches[2] . ']' . ' => xxx';
       }
-      if (preg_match('/\[?(password|access_token|passwordhash|client_secret|client_id|clientId|clientSecret|newpassword)\].*?=>(.*)/i', $line, $patternMatches)) {
-        // 2. Replace
-        $line = '[' . $patternMatches[1] . ']' . ' => xxx';
-      }
+
       if (preg_match('/&(password|access_token|passwordhash|client_secret|client_id|clientId|clientSecret|newpassword)=/', $line, $patternMatches)) {
         // 2. Replace
         $line = $patternMatches[0] . 'xxx';
       }
+
       if (preg_match('/"(password|access_token|passwordhash|client_secret|client_id|clientId|clientSecret|newpassword)/', $line, $patternMatches)) {
         // 2. Replace
         $line = $patternMatches[0] . '":xxx,';
@@ -131,24 +111,8 @@ class AppLog {
       $level = 'info';
       $category = 'forgotPassword';
       $msg .= ', ' . $method . ' in ' . $file . ' (' . $line . ')';
-      Yii::log($msg, $level, $category);
+      Yii::error($msg, $level, $category);
     }
-  }
-
-  private static function url_origin($use_forwarded_host = false) {
-    $s = $_SERVER;
-    $ssl = (!empty($s['HTTPS']) && $s['HTTPS'] == 'on') ? true : false;
-    $sp = strtolower($s['SERVER_PROTOCOL']);
-    $protocol = substr($sp, 0, strpos($sp, '/')) . (($ssl) ? 's' : '');
-    $port = $s['SERVER_PORT'];
-    $port = ((!$ssl && $port == '80') || ($ssl && $port == '443')) ? '' : ':' . $port;
-    $host = ($use_forwarded_host && isset($s['HTTP_X_FORWARDED_HOST'])) ? $s['HTTP_X_FORWARDED_HOST'] : (isset($s['HTTP_HOST']) ? $s['HTTP_HOST'] : null);
-    $host = isset($host) ? $host : $s['SERVER_NAME'] . $port;
-    return $protocol . '://' . $host;
-  }
-
-  private static function full_url($use_forwarded_host = false) {
-    return self::url_origin($use_forwarded_host) . $_SERVER['REQUEST_URI'];
   }
 
 }
