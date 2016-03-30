@@ -4,7 +4,6 @@ namespace app\models\baseHttp;
 
 use app\components\Timer;
 use app\components\AppLog;
-
 use Yii;
 
 /**
@@ -53,15 +52,20 @@ class Agent {
   public function request(Request $request) {
     $this->reqObj = $request;
     AppLog::log('Request: ' . print_r($request, true), 'error', 'application');
-    $this->doRequest($request);
-    $response = $this->createResponse();
+    if ($request->getPasswordAuth() == true) {
+      $response = $this->doPasswordAuthenticatedRequest($request);
+    }
+    else {
+      $this->doRequest($request);
+      $response = $this->createResponse();
+    }
     AppLog::log('Response: ' . print_r($response, true), 'error', 'application');
     return $response;
   }
 
   private function logRequest($request) {
-    if(is_array($this->headers)){
-      $rawheaders = array_change_key_case ( $this->headers, CASE_UPPER );
+    if (is_array($this->headers)) {
+      $rawheaders = array_change_key_case($this->headers, CASE_UPPER);
     }
     if (isset($rawheaders['X-IO-REQUEST-ID'])) {
       $requestId = $rawheaders['X-IO-REQUEST-ID'];
@@ -212,7 +216,7 @@ class Agent {
     $this->logResponse($error, $errMsg);
     curl_close($ch);
   }
-  
+
   private function concurrentLoginNotAllowed() {
     $concurrentLoginNotAllowedMessage = '{"error": {"code": "invalid.token","message": "concurrent.login.notallowed"}}';
     if ($this->curlResult == $concurrentLoginNotAllowedMessage) {
