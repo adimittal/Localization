@@ -2,6 +2,8 @@
 
 namespace app\models;
 
+use app\models\Transifex;
+
 
 /*
  * Encapsulates any translation service such as Google translate, transifex
@@ -44,7 +46,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->getProjects();
     }
   }
@@ -59,7 +61,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->getProject();
     }
   }
@@ -74,7 +76,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->getLanguage($tb->languageCode);
     }
   }
@@ -89,7 +91,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->getResource($tb->resourceSlug);
     }
   }
@@ -105,7 +107,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       if (empty($tb->resourceName)) {
         $tb->resourceName = basename($tb->messages_file); //if the resource name is not set we use the file name to set it
       }
@@ -130,7 +132,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       if (empty($tb->resourceName)) {
         $tb->resourceName = basename($tb->messages_file); //if the resource name is not set we use the file name to set it
       }
@@ -152,7 +154,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
 
       return $this->transifex->deleteResource($tb->resourceSlug);
     }
@@ -169,7 +171,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->getResources();
     }
   }
@@ -185,7 +187,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
 
       $translation = $this->transifex->getTranslations($tb->resourceSlug, $tb->languageCode);
 
@@ -207,7 +209,7 @@ class TranslateService {
       return json_encode($error);
     }
     if ($tb->service == 'transifex') {
-      $this->transifex = $this->mf()->createTransifex($tb);
+      $this->transifex = new Transifex($tb);
       return $this->transifex->putTranslations($tb->resourceSlug, $tb->language, $tb->file);
     }
   }

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="notif_labels_array">
+    <item>ذكرني باستمرار</item>
+    <item>لا تذكرني لمدة 10 دقائق</item>
+    <item>لا تذكرني لمدة ساعة</item>
+    <item>لا تذكرني لمدة 4 ساعات</item>
+    <item>لا تذكرني</item>
+  </string-array>
+  <string-array name="notif_labels_array_no_app">
+    <item>ذكرني باستمرار</item>
+    <item>لا تذكرني لمدة 10 دقائق</item>
+    <item>لا تذكرني لمدة ساعة</item>
+    <item>لا تذكرني لمدة 4 ساعات</item>
+    <item>لا تذكرني</item>
+  </string-array>
+</resources>

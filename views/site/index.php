@@ -20,29 +20,21 @@ $this->title = 'Saas Localization';
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-3">
-                <a class="btn btn-primary">Upload MyAccount</a>
-                <a class="btn btn-info">Download MyAccount</a>
+            
+            <?php
+            
+              $projects = ['portal', 'myaccount', 'iosliteclient', 'temmandroid', 'ioclient'];
+              foreach($projects as $p) {
+                echo <<<HT
+                <div class="col-lg-2">
+                <a class="btn btn-primary" href="/translation/upload?project=$p">Upload $p To Transifex</a>
+                <a class="btn btn-info" href="/translation/download?project=$p">Download $p From Transifex</a>
+                <a class="btn btn-info" href="/site/upload?project=$p">Upload $p To Saas-Localization</a>
+                <a class="btn btn-warning" href="/translation/projectdetails?project=$p">Show $p Details</a>
             </div>
-            <div class="col-lg-3">
-                <a class="btn btn-primary">Upload IOS</a>
-                <a class="btn btn-info">Download IOS</a>
-            </div>
-            <div class="col-lg-3">
-                <a class="btn btn-primary">Upload Portal</a>
-                <a class="btn btn-info">Download Portal</a>
-            </div>
-            <div class="col-lg-3">
-                <a class="btn btn-primary">Upload Android</a>
-                <a class="btn btn-info">Download Android</a>
-            </div>
+HT;
+              }
+            ?>
         </div>
-        <br /><br />
-        <div class="row">
-            <div class="col-lg-1 col-centered">
-              <a class="btn btn-warning" href="/transifex/projects">Show Transifex Projects</a>
-            </div>
-        </div>
-
     </div>
 </div>

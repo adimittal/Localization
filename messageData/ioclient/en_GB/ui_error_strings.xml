@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="error_title">Error</string>
+  <string name="error_login_title">Sign In Required</string>
+  <string name="error_unknown">An unexpected error occurred. If this is the first time you are seeing this message, please try again. If you continue to receive this message, please contact us for help at jawwy.sa/support.</string>
+  <string name="error_retrieving_plan_catalog">Problem refreshing catalog</string>
+  <string name="error_update_account_profile">Problem updating account profile</string>
+  <string name="error_update_account_information">Problem updating account information</string>
+  <string name="payment_methods_error_unknown">Problem updating payment method\nPlease try again</string>
+  <string name="payment_methods_error_invalid_cc">Problem updating payment method\nInvalid credit card information</string>
+  <string name="payment_methods_error_invalid_address">Invalid address</string>
+  <string name="payment_methods_error_address_not_found">Unknown address</string>
+  <string name="payment_methods_error_cc_not_found">Problem updating payment method\nUnknown credit card</string>
+  <string name="payment_methods_error_cc_top_up">Problem removing payment method\nIt is used for top-up</string>
+  <string name="payment_methods_error_with_code_format">Problem updating payment method (%s)\nPlease try again</string>
+  <string name="payment_methods_error_set_primary_failed">Problem setting card as default\nPlease try again</string>
+  <string name="payment_methods_error_address_verification_failed">Address verification failed\nPlease try again</string>
+  <string name="payment_methods_error_address_cvv_verification_failed">Address / CVV verification failed\nPlease try again</string>
+  <string name="payment_methods_error_cvv_verification_failed">CVV verification failed\nPlease try again</string>
+  <string name="payment_methods_error_invalid_card_number">Invalid card number\nPlease try again</string>
+  <string name="payment_methods_error_expiration_date">Invalid expiration date\nPlease try again</string>
+  <string name="payment_methods_error_invalid_card_type">Invalid card type\nPlease try again</string>
+  <string name="error_no_manage_permission">In order to access this screen, you need to either have assigned permissions or sign in using your account password.</string>
+  <string name="error_not_signed_in_parental">In order to access this screen, you need to sign in using your account password.</string>
+  <string name="error_not_signed_in">In order to access this screen, you need to either have assigned permissions or sign in using your account password.</string>
+  <string name="account_information_update_error">Problem updating account information</string>
+  <string name="subscriber_remove_failed">Problem removing phone</string>
+  <string name="error_connection_title">Data connection not available</string>
+  <string name="session_timeout_body">Your credentials were changed, please connect to your account again</string>
+  <string name="init_error_content">Some unexpected errors when connecting to your account, please connect to your account again.</string>
+  <!--<string name="error_not_signed_in">In order to access this screen, you need to either have assigned permissions or sign in using your Zact account password.</string>-->
+</resources>

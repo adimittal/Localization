@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">Non ora</string>
+  <string name="install">Sì, procedi</string>
+  <string name="ok">Ok</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Installazione nuovo servizio in corso...</string>
+  <string name="installing_dialog_text">Congratulazioni! Il tuo nuovo servizio sarà disponibile al più presto e non dovrai apportare alcuna modifica</string>
+  <string name="installing_dismiss">Ok</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Abbandona l\'installazione</string>
+  <string name="warning_dialog_text">Abbandonando l\'installazione, perderai i vantaggi di un nuovo tipo di servizio mobile. Desideri abbandonare?</string>
+  <string name="warning_back">Ripensaci</string>
+  <string name="warning_confirm">Sì, abbandona.</string>
+  <string name="app_name">Connections Optimizer</string>
+  <string name="action_settings">Impostazioni</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="operator_title">Servizio mobile</string>
+  <string name="connections_optimizer_subtext">Seleziona automaticamente il migliore hotspot mobile</string>
+  <!--Downloading-->
+  <string name="downloading">Download in corso</string>
+  <string name="downloaded">Download effettuato. Riavvia il tuo dispositivo.</string>
+  <string name="app">App</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Servizio di convalida non disponibile</string>
+  <string name="dt_title_operator_ineligible">Operatore telefonico non qualificato</string>
+  <string name="dt_title_subscriber_ineligible">Non qualificato</string>
+  <string name="dt_title_reboot">Ci sei quasi...</string>
+  <string name="dt_body_unknown">Questo servizio non è al momento disponibile. Riprova più tardi.</string>
+  <string name="dt_body_operator_ineligible">Questo servizio non è al momento disponibile con il tuo operatore telefonico.</string>
+  <string name="dt_body_subscriber_ineligible">Il cliente associato alla scheda SIM installata o a questo numero di telefono non è al momento qualificato per questo servizio.</string>
+  <string name="dt_body_reboot">Per usufruire del servizio occorre riavviare il dispositivo.</string>
+  <string name="dt_button_restart">Riavvia</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Il tuo dispositivo non dispone del servizio dati. Impossibile completare questa operazione. Assicurati che la connessione Internet sia abilitata.</string>
+  <string name="general_no_data_connection_title">Connessione dati non disponibile</string>
+  <string name="general_airplane_mode_title">Rete non disponibile</string>
+  <string name="general_airplane_mode">Il tuo dispositivo è in modalità aereo. Disattiva la modalità aereo nelle impostazioni del dispositivo.</string>
+</resources>

@@ -1,0 +1,137 @@
+// Only put branding text under the application
+
+/*
+ Localizable.strings
+ itsOn
+ 
+ Created by Mei Yu on 6/22/15.
+ Copyright (c) 2015 itsOn. All rights reserved.
+ */
+
+
+"oobe_activation_welcome" = "Welcome to Jawwy";
+"oobe_activation_create_button" = "I need an account";
+"oobe_activation_join_button" = "I have an account";
+"oobe_activation_terms_conditions" = "Terms of service";
+"oobe_one_time_password" = "OTP";
+"oobe_get_activation_code" = "Get activation code";
+"oobe_validate_activation_code" = "Activation code";
+"app_name" = "Jawwy";
+"unexpected_error_occurred" = "An unexpected error occurred. If this is the first time you are seeing this message, please try again. If you continue to receive this message, please contact us for help at jawwy.sa/support";
+"account_suspension_your_account_is_suspended_but_cannot_be_resumed" = "Your account is suspended but cannot be resumed. Please contact customer service.";
+"help_main_page" = "www.jawwy.sa";
+"help_zact_website" = "Jawwy Website";
+"main_dashboard_myplans" = "My plan";
+"main_dashboard_myplans_description" = "Build and change your core plans";
+"manage_lines" = "My devices";
+"main_dashboard_devices_description" = "Share your plan across your devices";
+"catalog_title" = "Get add-ons";
+"main_dashboard_addons_description" = "Boost your plan, gift or share";
+"main_dashboard_billing" = "My account";
+"main_dashboard_billing_description" = "Top up, track and monitor your usage";
+"main_dashboard_shop_online" = "Online shop";
+"main_dashboard_shop_online_description" = "Look for bundles, phones and accessories";
+"main_dashboard_get_support" = "Online support";
+"main_dashboard_get_support_description" = "Find answers or contact us";
+"setup_password_query_account" = "Enter your account password";
+"sign_in_enter_account_credentials" = "Enter your account credentials";
+"account_suspension_your_account_is_suspended_but_cannot_be_resumed" = "Your account is suspended but cannot be resumed. Please contact customer service.";
+"duration_of_all_plans_will_remain_unchanged" = "Duration of all plans will remain unchanged";
+
+"Unallocated" = "Unallocated";
+"AllocationNotAllowed" = "Allocation Not Allowed";
+ "MessageSetAllowanceBelowAlreadyUsedAmount" = "You cannot allocate %.0f%@ for this device as it had already used %.0f%@ of the plan. Please allocate %.0f%@ or more for this device and try again.";
+"RemovedDevice" = "Removed device";
+"TopupAmount" = "Top-up amount";
+"TopUpAccount" = "Sadad";
+"TopUpAccountId" = "Sadad ID";
+"AddMoneyWithAccount" = "Top-up with SADAD";
+"UseAccountPurchased" = "Use Sadad and connect to your bank - amount must be between %@ and %@.";
+"EnterTopUpCardPin" = "Voucher";
+"AddMoneyWithTopupCard" = "Top-up with a voucher";
+"UseTopupCardPurchased" = "Use a 14-digit voucher to top-up your account.";
+"TopupPinNumber" = "Voucher Number";
+"NotShared" = "Not shared";
+"TotalAllocation" = "Total allocation";
+"VoiceUsageRemaminingFormat"= "%.0f/%.0f mins remaining";
+"MessageUsageRemaminingFormat"= "%ld/%ld texts remaining";
+"DataUsageRemaminingFormat"= "%@/%@ remaining";
+"UsageRemaminingFormat"= "%@ remaining";
+"BundleMessageSetAllowanceBelowAlreadyUsedAmount" = "You cannot allocate %.0f%@ for this device as one or more components of the plan have already passed that usage limit. Try choosing a higher allocation.";
+"BundleMessageAllocationUsageTip" = "Must be at least %.0f%@";
+
+"billing_pin_card_associated" = "This voucher is already used";
+"PinNumberAddedToAccount" = "Voucher Added to Account";
+"WantToPurchaseDeviceOrSim" = "Want to purchase Jawwy device/SIM?";
+"CheckYourSimCardNotCompatible" = "Looks as if your SIM card is not compatible with Jawwy.";
+"SimNotCompatible" = "SIM not compatible";
+"account_billing_title" = "My account";
+
+/*
+ * URL - not translated by need to provide different link for localized URL
+ */
+"eStore_link" = "http://shop.jawwy.sa";
+"eStore_link_stg" = "http://betashop.jawwy.sa";
+"community_link" = "https://www.jawwy.sa/en/support/gethelp";
+"community_link_stg" = "https://beta.jawwy.sa/en/content/support";
+"help_support_link" = "https://jawwy.sa/support";
+"subscriber_role_detail_manage_description" = "%@ can buy or share plans and managed devices.";
+"subscriber_role_detail_none_description" = "%@ cannot buy or share plans and managed devices.";
+
+"AuthenticationRequired" = "Authentication Required";
+"AuthenticationCancel" = "Cancel";
+"AuthenticationLogin" = "Login";
+
+"TransferMoney" = "Transfer money";
+"AccountHistory" = "Account history";
+"TransferMoneyToDeviceForPayG" = "Transfer money to device for PAYG ®";
+"Activity" = "Activity";
+"TitlePinNumber" = "Voucher Number";
+"Deleting" = "Deleting";
+"myplans_header_base_plan" = "My base plan";
+"header_adjust" = "Manage";
+"header_manage" = "Build";
+"myplans_buy_specialized_plans" = "Buy add-ons";
+"myplans_monthly_difference" = "Difference";
+"myplans_previous_plan_cost" = "Current plan";
+"myplans_new_plan_cost" = "New plan";
+"TransactionSuccessful" = "Transaction successful";
+"AddedToPayGShort" = "%@ was successfully added to the PayG balance";
+"AddedToPayG" = "%@ was successfully added to the PayG balance of %@.";
+"AddedToPayGFull" = "%@ was successfully added to the PayG balance of %@ and will be available for use shortly.";
+"GiftMoney" = "Gift";
+"GiftToAnotherAccount" = "Gift to another account";
+"TopupTransferGift" = "Top-up/Transfer/Gift";
+"PAYG" = "Extra Service Credit";
+"myplans_header_one_time" = "My add-ons";
+"myplans_header_get_add_ons" = "Get add-ons";
+"myplans_account_balance" = "Current balance";
+"AddCreditDebitCard" = "Add Credit/Mada";
+"SelectCreditDebitCard" = "Select Credit/Mada";
+
+"AppLanguage" = "App language";
+"DeviceLanguage" = "Device language";
+"PleaseRestart" = "Please restart application for changes to take effect";
+"Dismiss" = "Dismiss";
+"OrderReceivedComment" = "Your purchase is successful. Thank you.";
+"myplans_account_balance" = "Current balance";
+"myplans_credit_debit_card" = "Credit/Mada";
+"AddMoneyWithCreditCard" = "Top-up with a credit/Mada card";
+"myplans_enter_credit_card_info" = "Enter Credit/Mada Information...";
+"AddCreditDebitCard" = "Add Credit/Mada";
+"NoCreditDebitCardOnFile" = "No Credit/Mada on File";
+"SelectCreditDebitCard" = "Select Credit/Mada";
+"NoAutoPayCardDesignated" = "No card enabled for Autopay";
+"YouHaveNotDesignatedCreditCard"="Click on an existing card number to assign it for Autopay";
+"PayGHistory" = "Extra service history";
+"UseAccountPurchased" = "Use Sadad and connect to your bank - amount must be between %@ and %@.";
+"MaximumAndMinimumPaymentMethod" = "Amount must be between %@ - %@ per day";
+"PayGHistoryCurrentBalance" = "Current Extra Service Credit";
+"FormatYourCurrentBalance" = "Your current balance : %@";
+"HeaderAddCard" = "Add a new card";
+"CheckingOut"   = "Your request is being processed.";
+"AccountNotificationLanguage" = "Account Notification Language";
+
+"BuySpecialPlans" = "Buy Add-Ons";
+"HomeNameLogo" = "Jawwy beta";
+"CurrencySymbol" = "SAR";

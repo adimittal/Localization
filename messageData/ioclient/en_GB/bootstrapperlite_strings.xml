@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">Not now</string>
+  <string name="install">Yes, proceed</string>
+  <string name="ok">Ok</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Installing new service…</string>
+  <string name="installing_dialog_text">Congratulations! Your new service will be ready soon and you won’t incur any charges</string>
+  <string name="installing_dismiss">Ok</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Abandon Installation</string>
+  <string name="warning_dialog_text">By abandoning installation, you will lose the benefits of a new type of mobile service. Are you sure you want to abandon?</string>
+  <string name="warning_back">Reconsider</string>
+  <string name="warning_confirm">Yes, abandon.</string>
+  <string name="app_name">Connections Optimizer</string>
+  <string name="action_settings">Settings</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="operator_title">Mobile Service</string>
+  <string name="connections_optimizer_subtext">Automatically select the best mobile hotspot</string>
+  <!--Downloading-->
+  <string name="downloading">Downloading</string>
+  <string name="downloaded">Downloaded. Please restart your device.</string>
+  <string name="app">App</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Validation Service Unavailable</string>
+  <string name="dt_title_operator_ineligible">Service Provider Not Eligible</string>
+  <string name="dt_title_subscriber_ineligible">Not Eligible</string>
+  <string name="dt_title_reboot">Almost there...</string>
+  <string name="dt_body_unknown">This service is not currently available. Try again later.</string>
+  <string name="dt_body_operator_ineligible">This service is not currently available with your service provider.</string>
+  <string name="dt_body_subscriber_ineligible">The customer associated with the installed SIM card or this phone number is not currently eligible for this service.</string>
+  <string name="dt_body_reboot">You must restart your device to use the service</string>
+  <string name="dt_button_restart">Restart</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Your device does not have data service. This operation cannot be completed. Please make sure data is enabled.</string>
+  <string name="general_no_data_connection_title">Data connection not available</string>
+  <string name="general_airplane_mode_title">Network not available</string>
+  <string name="general_airplane_mode">Your device is in airplane mode. Please turn off airplane mode in device settings.</string>
+</resources>

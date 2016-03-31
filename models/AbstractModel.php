@@ -13,11 +13,11 @@ abstract class AbstractModel {
   protected $invoker;
   protected $tb;
 
-  public function __construct() {
+  public function __construct($tb = '') {
     $this->configManager = new ConfigManager();
     $this->invokerData = new InvokerData();
     $this->invoker = new Invoker();
-    $this->tb = new TranslationBuilder();
+    $this->tb = empty($tb) ? new TranslationBuilder() : $tb;
     $this->init($this->tb);
   }
 

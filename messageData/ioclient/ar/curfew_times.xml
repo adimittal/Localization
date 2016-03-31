@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="curfew_from_times_array">
+    <item>12 ليلاً</item>
+    <item>1 صباحاً</item>
+    <item>2 صباحاً</item>
+    <item>3 صباحاً</item>
+    <item>4 صباحاً</item>
+    <item>5صباحاً</item>
+    <item>6 صباحاً</item>
+    <item>7 صباحاً</item>
+    <item>8 صباحاً</item>
+    <item>9 صباحاً</item>
+    <item>10 صباحاً</item>
+    <item>11 صباحاً</item>
+    <item>12 ظهراً</item>
+    <item>1 مساءً</item>
+    <item>2 مساءً</item>
+    <item>3 مساءً</item>
+    <item>4 مساءً</item>
+    <item>5 مساءً</item>
+    <item>6 مساءً</item>
+    <item>7 مساءً</item>
+    <item>8 مساءً</item>
+    <item>9 مساءً</item>
+    <item>10 مساءً</item>
+    <item>11 مساءً</item>
+  </string-array>
+  <string-array name="curfew_to_times_array">
+    <item>12 ليلاً</item>
+    <item>1 صباحاً</item>
+    <item>2 صباحاً</item>
+    <item>3 صباحاً</item>
+    <item>4 صباحاً</item>
+    <item>5صباحاً</item>
+    <item>6 صباحاً</item>
+    <item>7 صباحاً</item>
+    <item>8 صباحاً</item>
+    <item>9 صباحاً</item>
+    <item>10 صباحاً</item>
+    <item>11 صباحاً</item>
+    <item>12 ظهراً</item>
+    <item>1 مساءً</item>
+    <item>2 مساءً</item>
+    <item>3 مساءً</item>
+    <item>4 مساءً</item>
+    <item>5 مساءً</item>
+    <item>6 مساءً</item>
+    <item>7مساءً</item>
+    <item>8 مساءً</item>
+    <item>9 مساءً</item>
+    <item>10 مساءً</item>
+    <item>11 مساءً</item>
+  </string-array>
+  <string-array name="curfew_presets_array">
+    <item>أيام مدرسية</item>
+    <item>ليالي مدرسية</item>
+    <item>ليلة عطلة نهاية الأسبوع</item>
+    <item>عطل نهاية الأسبوع</item>
+    <item>كل اليوم أيام الأسبوع</item>
+    <item>كل يوم</item>
+    <item>خصخصة</item>
+  </string-array>
+</resources>

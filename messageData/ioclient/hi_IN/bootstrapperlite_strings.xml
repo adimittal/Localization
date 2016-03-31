@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">अभी नहीं </string>
+  <string name="install">हाँ, आगे बढ़ना </string>
+  <string name="ok">ठीक </string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">नयी सेवा की स्थापना...</string>
+  <string name="installing_dialog_text">बधाई हो! अपनी नयी सेवा जल्दी ही तैयार हो जाएगा और आपको किसी भी प्रकार का शुल्क नहीं उठाना होगा</string>
+  <string name="installing_dismiss">ठीक </string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">स्थापना का परित्याग </string>
+  <string name="warning_dialog_text">स्थापना का परित्याग करके, आप एक नए प्रकार के मोबाइल सेवा के लाभो को खो देंगे। क्या आप पका परित्याग करना चाहते हैं?</string>
+  <string name="warning_back">पुनर्विचार </string>
+  <string name="warning_confirm">हाँ, परित्याग करदो. </string>
+  <string name="app_name">कनेक्शन अनुकूलक</string>
+  <string name="action_settings">सेटिंग्स</string>
+  <string name="hello_world">Nameste duniya!</string>
+  <string name="operator_title">मोबाइल सेवा</string>
+  <string name="connections_optimizer_subtext">अपने आप सबसे अछा मोबाइल हॉटस्पॉट को चुना</string>
+  <!--Downloading-->
+  <string name="downloading">डाउनलोड हो रहा हैं </string>
+  <string name="downloaded">डाउनलोड खतम। आपके डिवाइस को पूण प्रारम्भ करे</string>
+  <string name="app">अप्प </string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">सत्यापन सेवा उपलभ्य नहीं</string>
+  <string name="dt_title_operator_ineligible">सेवा प्रदाता पत्र नहीं हैं </string>
+  <string name="dt_title_subscriber_ineligible">पत्र नहीं हैं </string>
+  <string name="dt_title_reboot">लगभग वहां...</string>
+  <string name="dt_body_unknown">यह सेवा अभी उपलभ्य नहीं हैं।  बाद में फिर से प्रयास करें. </string>
+  <string name="dt_body_operator_ineligible">यह सेवा अभी उपलभ्य नहीं हैं आपके सेवा प्रदाता के साथ. </string>
+  <string name="dt_body_subscriber_ineligible">जो ग्राहक यह सिम या फ़ोन शांक्या के साथ जुड़े हुए हैं वह वर्त्तमान इस सेवा के लिए पत्र नहीं हैं। </string>
+  <string name="dt_body_reboot">आपके सेवा का उपयोग करने के लिए अपने डिवाइस को पूण प्रारम्भ करना होगा </string>
+  <string name="dt_button_restart">पूण प्रारम्भ करें</string>
+  <!--Initialization strings-->
+</resources>

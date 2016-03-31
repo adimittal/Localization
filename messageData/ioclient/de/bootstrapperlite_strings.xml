@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">Nicht jetzt</string>
+  <string name="install">Ja, fortfahren</string>
+  <string name="ok">Ok</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Neuen Service installieren ...</string>
+  <string name="installing_dialog_text">Herzlichen Glückwunsch! Ihr neuer Service steht in Kürze bereit und es werden keine Gebühren anfallen.</string>
+  <string name="installing_dismiss">Ok</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Auf Installation verzichten</string>
+  <string name="warning_dialog_text">Durch den Verzicht der Installation verlieren Sie den Vorteil eines neuartigen Mobilfunkdienstes. Sind Sie sicher, dass Sie verzichten möchten?</string>
+  <string name="warning_back">Überdenken</string>
+  <string name="warning_confirm">Ja, verzichten.</string>
+  <string name="app_name">Connections Optimizer</string>
+  <string name="action_settings">Einstellungen</string>
+  <string name="hello_world">Hallo Welt!</string>
+  <string name="operator_title">Mobilfunkservice</string>
+  <string name="connections_optimizer_subtext">Automatisch den besten mobilen Hotspot wählen</string>
+  <!--Downloading-->
+  <string name="downloading">Wird heruntergeladen</string>
+  <string name="downloaded">Heruntergeladen. Starten Sie bitte Ihr Gerät neu.</string>
+  <string name="app">App</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Validierungsservice nicht verfügbar</string>
+  <string name="dt_title_operator_ineligible">Mobilfunkanbieter nicht berechtigt</string>
+  <string name="dt_title_subscriber_ineligible">Nicht berechtigt</string>
+  <string name="dt_title_reboot">Fast geschafft ...</string>
+  <string name="dt_body_unknown">Dieser Service ist derzeit nicht verfügbar. Bitte versuchen Sie es später wieder.</string>
+  <string name="dt_body_operator_ineligible">Dieser Service ist derzeit mit Ihrem Mobilfunkanbieter nicht verfügbar.</string>
+  <string name="dt_body_subscriber_ineligible">Der mit dieser installierten SIM-Karte oder Telefonnummer verbundene Kunde ist derzeit nicht zu diesem Service berechtigt.</string>
+  <string name="dt_body_reboot">Sie müssen Ihr Gerät neu starten, um den Service nutzen zu können.</string>
+  <string name="dt_button_restart">Neu starten</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Ihr Gerät hat keine Datenverbindung. Dieser Vorgang kann nicht abgeschlossen werden. Stellen Sie bitte sicher, dass die Verbindung aktiviert ist.</string>
+  <string name="general_no_data_connection_title">Datenverbindung nicht verfügbar</string>
+  <string name="general_airplane_mode_title">Netzwerk nicht verfügbar</string>
+  <string name="general_airplane_mode">Ihr Gerät befindet sich im Flugmodus. Schalten Sie bitte in den Geräteeinstellungen den Flugmodus aus.</string>
+</resources>

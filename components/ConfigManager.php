@@ -1,12 +1,8 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace app\components;
+
+use Yii;
 
 /**
  * Description of ConfigManager
@@ -28,6 +24,14 @@ class ConfigManager {
     $user = getenv("TRANSIFEX_USER");
     $pass = getenv("TRANSIFEX_PASS");
     return $settings = ['user' => $user, 'password' => $pass];
+  }
+  
+  public function getUploadPath() {
+    return Yii::$app->basePath. "/uploads";
+  }
+  
+  public function getMessageDataPath($projectSlug) {
+    return Yii::$app->basePath. "/messageData/$projectSlug";
   }
 
   public function getDefaultServer() {

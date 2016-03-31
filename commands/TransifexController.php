@@ -13,6 +13,17 @@ class TransifexController extends Controller {
   public function actionIndex($message = 'hello world') {
     echo $message . "\n";
   }
+  
+  /**
+   * Make message directories and let them be owned by apache
+   * /git/saas-localization/yii transifex/makedatadir
+   */
+  public function actionMakedatadir() {
+    `mkdir /git/saas-localization/messageData/itsonportal/hi/`;
+    `mkdir /git/saas-localization/messageData/itsonportal/es/`;
+    `sudo chown -R _www:_www /git/saas-localization/messageData/itsonportal/hi/`;
+    `sudo chown -R _www:_www /git/saas-localization/messageData/itsonportal/es/`;
+  }
 
   /**
    * When we download translations from transifex, the filenames are awkward, this command renames them

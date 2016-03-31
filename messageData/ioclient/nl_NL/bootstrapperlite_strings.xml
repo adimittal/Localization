@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">Niet nu</string>
+  <string name="install">Ja, ga verder</string>
+  <string name="ok">OK</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Nieuwe service installeren...</string>
+  <string name="installing_dialog_text">Gefeliciteerd! Uw nieuwe gratis service is zo gebruiksklaar.</string>
+  <string name="installing_dismiss">OK</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Installatie afbreken</string>
+  <string name="warning_dialog_text">Als u de installatie afbreekt, kunt u niet profiteren van een nieuw type mobiele service. Weet u zeker dat u de installatie wilt afbreken?</string>
+  <string name="warning_back">Toch installeren</string>
+  <string name="warning_confirm">Ja, afbreken.</string>
+  <string name="app_name">Connections Optimizer</string>
+  <string name="action_settings">Instellingen</string>
+  <string name="hello_world">Hallo wereld!</string>
+  <string name="operator_title">Mobiele service</string>
+  <string name="connections_optimizer_subtext">Automatisch de beste mobiele hotspot selecteren</string>
+  <!--Downloading-->
+  <string name="downloading">Downloaden...</string>
+  <string name="downloaded">Gedownload. Start uw apparaat opnieuw.</string>
+  <string name="app">App</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Validatieservice niet beschikbaar</string>
+  <string name="dt_title_operator_ineligible">Serviceprovider niet bevoegd</string>
+  <string name="dt_title_subscriber_ineligible">Niet bevoegd</string>
+  <string name="dt_title_reboot">Bijna klaar...</string>
+  <string name="dt_body_unknown">Deze service is op dit moment niet beschikbaar. Probeer het later opnieuw.</string>
+  <string name="dt_body_operator_ineligible">Deze service is op dit moment niet beschikbaar in combinatie met uw serviceprovider.</string>
+  <string name="dt_body_subscriber_ineligible">De aan deze SIM-kaart of dit telefoonummer gekoppelde klant komt niet op dit moment niet in aanmerking voor deze service.</string>
+  <string name="dt_body_reboot">Start uw apparaat opnieuw om de service te gebruiken</string>
+  <string name="dt_button_restart">Opnieuw starten</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Data service is niet beschikbaar op uw apparaat. Deze handeling kan niet worden voltooid. Zorg dat data is ingeschakeld.</string>
+  <string name="general_no_data_connection_title">Dataverbinding niet beschikbaar</string>
+  <string name="general_airplane_mode_title">Netwerk niet beschikbaar</string>
+  <string name="general_airplane_mode">Uw apparaat staat in een vliegtuigmodus. Schakel de vliegtuigmodus uit bij de apparaatinstellingen.</string>
+</resources>

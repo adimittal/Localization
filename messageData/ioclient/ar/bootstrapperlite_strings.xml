@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">بعدين</string>
+  <string name="install">نعم، استمر</string>
+  <string name="ok">موافق</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">جاري التثبيت...</string>
+  <string name="installing_dialog_text">خدمتك الجديدة بتكون جاهزة بعد شوي.</string>
+  <string name="installing_dismiss">موافق</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">إلغاء التثبيت</string>
+  <string name="warning_dialog_text">بإيقاف التثبيت راح تفقد مزايا الخدمة. متأكد من الإيقاف؟</string>
+  <string name="warning_back">ودّي أفكر</string>
+  <string name="warning_confirm">نعم، أوقفه</string>
+  <string name="app_name">محسن الاتصال</string>
+  <string name="action_settings">الإعدادات</string>
+  <string name="hello_world">يا هلا!</string>
+  <string name="operator_title">جوّي</string>
+  <string name="connections_optimizer_subtext">اختار أفضل شبكة واي فاي تلقائيًا</string>
+  <!--Downloading-->
+  <string name="downloading">جاري التحميل </string>
+  <string name="downloaded">تم التحميل. يا ليت تعيد تشغيل جهازك.</string>
+  <string name="app">التطبيق</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">خدمة التحقق غير متوفرة</string>
+  <string name="dt_title_operator_ineligible">مزود الخدمة غير مؤهل</string>
+  <string name="dt_title_subscriber_ineligible">غير مسموح</string>
+  <string name="dt_title_reboot">على وشك...</string>
+  <string name="dt_body_unknown">هذه الخدمة ما هي متوفرة حالياَ. يا ليت تحاول بعد فترة.</string>
+  <string name="dt_body_operator_ineligible">هذه الخدمة ماهي متوفرة حالياَ مع مزود الخدمة الخاص بك.</string>
+  <string name="dt_body_subscriber_ineligible">العميل المرتبط بالشريحة المزودة أو برقم الهاتف غير مؤهل لهذه الخدمة.</string>
+  <string name="dt_body_reboot">لازم تعيد تشغيل جهازك لاستخدام الخدمة</string>
+  <string name="dt_button_restart">إعادة تشغيل</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">جهازك ما فيه خدمة الإنترنت، عشان كذا ما اكتملت هذه العملية. يا ليت تتأكد من إن خدمة الإنترنت مفعلة.</string>
+  <string name="general_no_data_connection_title">خدمة الإنترنت غير متوفرة</string>
+  <string name="general_airplane_mode_title">الشبكة غير متوفرة</string>
+  <string name="general_airplane_mode">جهازك في وضع الطيران. يا ليت توقّف وضع الطيران من إعدادات الجهاز.</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="error_unknown">Oops.  Something went wrong.</string>
+  <!--<string name="error_not_signed_in">In order to access this screen, you need to either have assigned permissions or sign in using your Zact account password.</string>-->
+</resources>

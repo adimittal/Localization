@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="notif_settings_history_span_labels_entries">
+    <item>90 يوم</item>
+    <item>شهر</item>
+    <item>أسبوع</item>
+    <item>ساعة</item>
+  </string-array>
+</resources>

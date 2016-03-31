@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="weekdays_array">
+    <item>الأحد</item>
+    <item>الإثنين</item>
+    <item>الثلاثاء</item>
+    <item>الأربعاء</item>
+    <item>الخميس</item>
+    <item>الجمعة</item>
+    <item>السبت</item>
+  </string-array>
+</resources>

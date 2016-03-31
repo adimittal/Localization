@@ -1,0 +1,1184 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:宋体;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:宋体;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	color:#FF533F;
+	font-size:17.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:11.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:DodgerBlue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:DeepSkyBlue;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:ZH-CN;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+p.MacPacTrailer, li.MacPacTrailer, div.MacPacTrailer
+	{mso-style-name:"MacPac Trailer";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:10.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:none;
+	tab-stops:right 6.5in;
+	font-size:7.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:Tahoma;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.zzmpTrailerItem
+	{mso-style-name:zzmpTrailerItem;
+	mso-style-unhide:no;
+	mso-ansi-font-size:7.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-variant:normal !important;
+	mso-text-animation:none;
+	mso-hide:none;
+	text-transform:none;
+	position:relative;
+	top:0pt;
+	mso-text-raise:0pt;
+	letter-spacing:0pt;
+	text-shadow:none;
+	text-effect:none;
+	text-effect:none;
+	font-weight:normal;
+	font-style:normal;
+	mso-no-proof:yes;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;
+	vertical-align:baseline;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;
+	color:white;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:150946817;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1512126236 67698703 67698689 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.0in;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.0in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:3.5in;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.0in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.5in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:5.0in;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+<body lang="ar" link="blue" vlink="purple" style="tab-interval:.5in">
+
+<div class="WordSection1">
+
+<p class="MsoHeader" align="center" style="text-align:center">Terms of Service</p>
+<br><p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+normal">ITSON, INC. TERMS OF SERVICE</b><br>Last update: May 13, 2013<o:p></o:p></p>
+
+<p style="vertical-align:baseline"><strong><span style="font-size:11.0pt;
+font-family:Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">INTRODUCTION</span></strong><span style="font-size:11.0pt;
+font-family:Calibri"><br>These <span class="SpellE">ItsOn</span>, Inc. (“<span class="SpellE">ItsOn</span>”)
+Terms of Service (“Terms”) are an agreement between you and <span class="SpellE">ItsOn</span>
+concerning your use of <span class="SpellE">Zact</span> mobile services
+(“Services”), which are defined below. <span class="SpellE">ItsOn</span> operates
+under several trademarks or brands including <span class="SpellE">Zact</span>.<span style="mso-spacerun:yes">  </span>Information regarding rate plans, pricing,
+and features (collectively, the “Rate Plan”), terms and conditions applicable
+to additional features and services, and information on other business
+practices, procedures, and policies relating to Service including, but not
+limited to, our&nbsp;Privacy Policy,&nbsp;Return &amp; Exchange Policies, and Website
+Terms of Use&nbsp;are available to you on our website zact.com and are
+incorporated by reference into these Terms and are binding on you.&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">BY USING ANY OF THE SERVICES IN ANY FASHION, YOU AGREE TO THESE TERMS,
+OUR&nbsp;PRIVACY POLICY, THE&nbsp;RETURN &amp; EXCHANGE POLICIES, AND THE&nbsp;WEBSITE
+TERMS OF USE.&nbsp; IF YOU DO NOT AGREE TO THESE TERMS, THE&nbsp;PRIVACY POLICY,
+THE RETURN &amp; EXCHANGE POLICIES, OR THE&nbsp;WEBSITE TERMS OF USE, YOU ARE
+NOT PERMITTED TO USE THE SERVICES.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">THESE TERMS PROVIDE FOR THE SETTLEMENT OF DISPUTES BY MANDATORY
+ARBITRATION INSTEAD OF BY JURY TRIALS. SEE DISPUTE RESOLUTION&nbsp;SECTION.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">You agree that you accept these terms, the&nbsp;Privacy Policy, the&nbsp;Return
+&amp; Exchange Policies, and the&nbsp;Website Terms of Use electronically,
+which may include, without limitation clicking on an “agree” or similar button
+or checking a box next to or near a link to any of the <span class="SpellE">ItsOn</span>
+agreements.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">DEFINITIONS USED IN THESE TERMS<br>Certain words in these Terms have specific meanings, regardless of whether such
+words are capitalized or not.&nbsp; For example, “we”, “us,” “our” and “<span class="SpellE">ItsOn</span>” means and refers to <span class="SpellE">ItsOn</span>,
+Inc. and all brands and trademarks owned and/or controlled by <span class="SpellE">ItsOn</span> including, but not limited to, <span class="SpellE">Zact</span>.
+“You”, “your,” “customer,” “subscriber” and “user” refer to end-users of the <span class="SpellE">Zact</span> Services. “Device(s)” means any phone, mobile broadband
+device, any other device, accessory, equipment, or other product we sell to you
+or that is active on your account with us and used in association with the
+Services. “Service(s)” means our wireless telephone, text and data services,
+rate plans, offers and options associated with your account with us. “Website”
+refers to zact.com.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">USE OF DEVICE<br>In order to use the Services, you must purchase and use only Devices that are
+compatible with the Services.&nbsp; By using Devices, you are agreeing to
+comply with the&nbsp;End User License Agreement&nbsp;(“EULA”).&nbsp; You are
+responsible for the purchase and maintenance of Devices. Devices that are
+compatible with the Services are listed on the Website.<br><b><br><span style="border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">MANAGEMENT OF WIRELESS NETWORK AND USE OF OUR SERVICES</span></b><br>We reserve the right to manage our wireless systems and the use of our Services
+in our sole discretion.&nbsp; Therefore, any customer or potential customer may
+be denied a request to use our Services, or we may discontinue any customer’s
+service for any lawful reason or for any reason provided in these Terms or
+other policies in our sole discretion.&nbsp; We may, in our sole discretion and
+to the extent legally permitted, block or otherwise restrict access to any
+telephone number and/or certain categories of telephone numbers (e.g., 9XX numbers
+other than 911), certain websites, portals, or any messages or content or any
+telephone calls or services that stimulate or are intended to stimulate traffic
+in any fashion, including without limitation, free conference calling services,
+chat lines, call centers and help desks and similar calls.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">SERVICE AVAILABILITY AND QUALITY</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">An official map
+of our service areas is available on the Website but Services may not be
+available everywhere or with certain rate plans, promotions, options or offers
+and you acknowledge that our coverage maps only approximate our anticipated
+wireless coverage area outdoors under optimal conditions.&nbsp; Moreover, the
+service areas may either increase or decrease from time to time. The actual
+service area, coverage and quality of service may fluctuate based on numerous
+factors, including without limitation, signal strength, network congestion or
+capacity, hardware, software, server speeds of the websites, portals or other
+locations on the Internet that you use with Devices and Services, the weather
+and any other factors that are beyond our control.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Any statements by <span class="SpellE">ItsOn</span>, its employees,
+agents, representatives or advertisers relating to the availability of our
+Services and/or the coverage of the wireless network used by our Services are
+only intended to describe the approximate coverage and availability of the
+Services.&nbsp; You should not interpret any such statements to mean that the
+Services will be available under all circumstances, at all times, or without
+interruption in your service area. You agree we are not liable for problems
+relating to Service availability.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">The quality of the Services may be affected by conditions beyond our
+control, including issues related to Devices, problems with the network on
+which the Services are provided (which may be caused by problems that our
+service providers or roaming partners are having), signal strength, hardware,
+software, structures, geographic, topographic or atmospheric conditions, Force
+Majeure Events, and other conditions that are beyond our control. We do not
+warrant or guarantee that the Services will be available at any specific time
+or geographic location, or that the Services will be provided without
+interruption or at any particular quality level.&nbsp; Outages and
+interruptions in the Service may occur, and the speed of Service can vary based
+on a variety of conditions, including those listed above. Therefore, the
+Services, including calls or attempted calls to emergency services like 911
+calls, may be interrupted or fail, and/or the quality of calls may be
+poor.&nbsp; Services that rely on location information, such as E911, GPS
+navigation, may depend on network coverage and may depend on the Devices’
+ability to acquire satellite signals (typically not available indoors) or cell
+antenna sites. While Devices are installing a software update, users may be
+unable to use Devices for any purposes, including the placing of calls to
+emergency services operators, until the software update is installed. You agree
+we are not liable for problems relating to the quality of the Services.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">LOCATION-BASED SERVICES<span class="apple-converted-space">&nbsp;</span></span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Based upon the
+nature of wireless technologies, our network generally has information that can
+be used to determine the location of Devices when they are outdoors and/or
+turned on.&nbsp; These technologies allow us and/or third parties to provide
+emergency 911 services, as well as other location-based services. Network
+coverage or environmental factors (such as structures, buildings, weather,
+geography, landscape, topography and atmospheric conditions) can impact the
+ability to access Devices’ location information and use of location-based
+services.&nbsp; Thus, even if Devices and&nbsp;Services appear to be
+functioning properly, location data may not be automatically available at any
+given time.&nbsp;<br>You agree that any authorized user of Devices associated with the Services may
+access and use location-based services that are installed on Devices. You
+authorize <span class="SpellE">ItsOn</span> or any applicable third-party
+applications or services installed on Devices that use location-based technologies
+to use these location-based services to determine the location of the Devices,
+which could include the relevant user’s location or any authorized user of Devices
+at any given time.&nbsp;&nbsp;You understand that your use of location-based applications
+is subject to the applications’ or relevant services’ providers terms and
+conditions and other policies relevant to third-party applications or services.&nbsp;
+If location-based services are activated for any Devices, you agree that you
+are required to inform all authorized users of your Devices of these Terms, as
+well as any applicable third-party terms of use and any other relevant
+policies.&nbsp; Additional information concerning location-based services is
+available in our Privacy Policy.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">DEVICES</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Our Services only
+work with our Devices and not all services are available with all Devices, on
+all networks or within all coverage areas. Devices will not have any service
+outside of our coverage area however we may choose to allow you to roam onto
+partner networks in our sole discretion.&nbsp; Service may be limited or
+interrupted by weather, obstructions, system capacity limitations, system
+repairs or modifications, or other conditions that are beyond our reasonable
+control, such as Force Majeure Events.&nbsp; <span class="SpellE">ItsOn</span> is
+not responsible for time lost due to interruption of Service and no credits or
+refunds will be issued for any reason.&nbsp; Except for 911 calls and any
+“roaming” services purchased by you, you will not be able to use your wireless
+Devices outside of your service area for any calls (including local and long
+distance) or any other service features including data services.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">ROAMING</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">International
+roaming is not available. In the United States <span class="SpellE">ItsOn</span> may
+support roaming onto select networks in the United States (“Domestic Roaming”),
+and this roaming coverage is included as part of the coverage map. .&nbsp; When
+Devices are connected to a Domestic Roaming network, we may choose to allow users
+to roam as part of your Monthly Plan or Specialized Plans in our sole
+discretion.&nbsp; Users’ ability to roam is dependent on a number of factors,
+including the radio transmissions that Devices can acquire. We make no
+guarantee that Domestic Roaming coverage will be available. Depending on Device
+settings, users may automatically roam if there is a gap or interruption in
+coverage within our network area and roaming coverage areas. Limits on the
+amount of minutes, number of texts, and amount or speed of data services used
+while roaming may be applied.&nbsp; Certain Services or Service features&nbsp;may
+not be available in roaming coverage areas, and call quality may be lower while
+roaming. <span class="SpellE">ItsOn</span> reserves the right to deny Domestic
+Roaming to any Device at any time.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">EMERGENCY CALLS</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Public Safety
+Officials advise that when making 911 or other emergency calls, users should
+always be prepared to provide location information. Unlike traditional <span class="SpellE">wireline</span> phones, depending on a number of factors (for
+example, whether Devices are GPS enabled, where users are placing emergency
+calls from, whether local emergency service providers have upgraded their
+equipment, etc.), 911 operators may not know the emergency caller’s phone
+number, location, nor the location of the caller’s Device. In certain
+circumstances, an emergency call may be routed to a state patrol dispatcher or
+alternative location set by local emergency service providers.&nbsp; Enhanced
+911 services (“E911”), where enabled by local emergency authorities, use GPS
+technology to provide location information or other methods to automatically
+determine callers’ locations. Even when available, however, E911 does not
+always provide accurate location information.&nbsp; If your Device is indoors
+or for some other reason cannot acquire a satellite signal, or cannot obtain
+other information used to determine callers’ locations, your location
+information may not be automatically delivered to emergency call takers. Some
+Devices have a safety feature that prevents use of the keypad after dialing 911
+- you should follow voice prompts when interacting with emergency service
+providers employing IVR systems to screen calls.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span class="GramE"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;font-family:Calibri">VOICEMAIL SERVICES
+PROVIDED BY A THIRD PARTY -- YOUMAIL, INC.</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:
+Calibri"><o:p></o:p></span></b></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:
+Calibri">Collection and Use of Users’ Information by <span class="SpellE">YouMail</span>,
+Inc.<o:p></o:p></span></b></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri">Voicemail service offerings are provided to <span class="SpellE">Zact</span> users by a third party, <span class="SpellE">YouMail</span>,
+Inc. Users will be provided with <span class="SpellE">YouMail</span>, Inc.’s
+voicemail service offerings for their voicemail needs. <span style="mso-spacerun:yes"> </span>Use of <span class="SpellE">YouMail</span>,
+Inc.’s voicemail service offerings is subject to: (<span class="SpellE">i</span>)
+these Terms and <span class="SpellE">ItsOn’s</span> <span style="border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in">Privacy Policy</span>; (ii) <span class="SpellE">YouMail</span>, Inc.’s Terms and Conditions (<a href="http://www.youmail.com/termsofuse.html">http://www.youmail.com/termsofuse.html</a>);
+(iii) <span class="SpellE">YouMail</span>, Inc.’s Privacy Policy (<a href="http://youmail.com/home/corp/privacy.do">http://youmail.com/home/corp/privacy.do</a>)<span class="GramE">; <span style="mso-spacerun:yes"> </span>and</span> (iv) any other
+policies relevant to <span class="SpellE">YouMail</span>, Inc.’s service
+offerings (please review <span class="SpellE">YouMail</span>, Inc.’s website for
+additional information) (<a href="http://www.youmail.com">http://www.youmail.com</a>).
+<span class="SpellE">YouMail</span>, Inc. will collect, use and disclose your
+personal information as detailed in <span class="SpellE">YouMail</span>, Inc.’s
+Terms of Service, Privacy Policy and other any other policies relevant to <span class="SpellE">YouMail</span>, Inc.’s service offerings.<span style="mso-spacerun:yes">  </span>By using <span class="SpellE">YouMail</span>,
+Inc.’s voicemail service offerings, you agree, on behalf of yourself and any
+users associated with your account, that <span class="SpellE">ItsOn</span>
+neither has responsibility nor control over the third party voicemail service
+offerings made available by <span class="SpellE">YouMail</span>, Inc. to <span class="SpellE">ItsOn</span> Users, including, but not limited to, the terms that
+accompany the <span class="SpellE">YouMail</span>, Inc. voicemail service
+offerings and the way in which <span class="SpellE">YouMail</span>, Inc. utilizes
+any information it obtains about you either directly from users’ use of <span class="SpellE">YouMail</span>, Inc.’s voicemail service offerings, or from <span class="SpellE">ItsOn</span> by virtue of users’ election to make use of <span class="SpellE">YouMail</span>, Inc.’s voicemail service offerings.<o:p></o:p></span></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:
+Calibri">Sharing of Users’ Information with between <span class="SpellE">ItsOn</span>
+and <span class="SpellE">YouMail</span>, Inc.<o:p></o:p></span></b></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span class="GramE"><span style="font-size:11.0pt;font-family:Calibri">Certain information concerning users
+will be shared by <span class="SpellE">ItsOn</span> with <span class="SpellE">YouMail</span>,
+Inc</span></span><span style="font-size:11.0pt;font-family:Calibri">. You agree
+that you or any users electing to use <span class="SpellE">YouMail</span>, Inc.’s
+voicemail service offerings authorize <span class="SpellE">ItsOn</span> to
+provide such information to <span class="SpellE">YouMail</span>, Inc.<span style="mso-spacerun:yes">  </span>Please refer to our <span style="border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in">Privacy Policy</span> for
+additional details concerning the information shared by <span class="SpellE">ItsOn</span>
+with <span class="SpellE">YouMail</span>, Inc.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:Calibri">SPECIFIC TERMS REGARDING CHARGES
+AND SERVICES</span></b><span style="font-size:11.0pt;font-family:Calibri"><o:p></o:p></span></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:Calibri;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in">Monthly Plan and Account in
+Good Standing Required to Use Services<o:p></o:p></span></b></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in;mso-bidi-font-weight:bold">All of <span class="SpellE">Zact’s</span>
+service offerings, voice, text and data, require you to have an active Monthly
+Plan and your account must be in good standing.<span style="mso-spacerun:yes"> 
+</span>If your Monthly Plan is suspended, you will be unable to upgrade or
+downgrade your Monthly Plan and you will not be able to make any purchases
+including any Specialized Services. An account is in good standing when all
+Services are prepaid in full and the default payment method associated with your
+account is valid.<b><o:p></o:p></b></span></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:
+Calibri">Fair Usage Policy<o:p></o:p></span></b></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span class="SpellE"><span style="font-size:11.0pt;font-family:Calibri">ItsOn</span></span><span style="font-size:11.0pt;font-family:Calibri"> is committed to offering
+customers the best value at the lowest possible price. In order to do so, <span class="SpellE">ItsOn</span> has adopted this Fair Usage Policy designed to insure
+that its offerings are not abused. When <span class="SpellE">ItsOn</span> refers
+to qualitative based offerings (e.g. time-based, application based) in
+connection with voice, text or data offerings, <span class="SpellE">ItsOn</span>
+means reasonable usage as determined by it in its sole discretion.<span style="mso-spacerun:yes">  </span><span class="SpellE">ItsOn</span> may choose to
+publish fair usage limits for specific offerings.<span style="mso-spacerun:yes">  </span><span class="SpellE">ItsOn</span> has developed
+internal processes to detect excessive usage.<b style="mso-bidi-font-weight:
+normal"><o:p></o:p></b></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Voice Usage</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Voice minutes are
+deducted from your selected voice allowance in full-minute increments, measured
+from the time the call is initiated (“Send” key pressed) until the call is
+terminated by you, i.e., pressing the “End” key, or the call is terminated by
+the called party and the network disconnects the call.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Text Usage</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Short message
+texts (“SMS”) are deducted from your selected text allowance for both inbound
+and outbound text messages.<span style="mso-spacerun:yes">  </span>For messages
+sent to multiple recipients, your selected text allowance will be deducted for
+each recipient.<span style="mso-spacerun:yes">  </span>A single SMS consists of
+up to 140 characters.<span style="mso-spacerun:yes">  </span>If a message is
+longer than 140 characters, your selected text allowance will be deducted an
+additional message for each additional 140 characters beyond the single SMS
+limit.<span style="mso-spacerun:yes">  </span>Multimedia messaging (“MMS”) is
+not included as part of text service allowance; instead it is counted as part
+of your data usage (see Data Usage below).<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Data Usage<span class="apple-converted-space">&nbsp;</span></span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Data usage
+includes web browsing, application usage, multimedia messaging (“MMS”),
+downloading content (like applications, games, etc.), ringtones and similar
+activities.&nbsp; Your selected data allowance will be deducted in <span class="GramE">one megabyte</span> (“MB”) increments and each session will be
+rounded up to the nearest MB.&nbsp; Note that applications may continue to use
+your data connection if they are running in background and such usage will
+count towards your selected data allowance. <span style="mso-spacerun:yes"> </span><o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Third-Party Applications</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Use of
+third-party applications or services is subject to the third party’s terms and
+conditions and any other policies relevant to such applications or
+services.&nbsp; Third-party applications or services may access, collect, use
+or disclose your personal information or require <span class="SpellE">ItsOn</span>
+to disclose your information, including location information, as result of your
+agreement to the installation and use of those applications on users Devices.&nbsp;
+If users access, utilize, or authorize third-party applications or services,
+you agree and authorize <span class="SpellE">ItsOn</span> to provide such
+information to the relevant third-party providers.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Internet Browsing and Text Messaging to a Device through the
+Internet</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">When you use a
+Device to browse the <span class="GramE">Internet,</span> make use of mobile
+applications, or otherwise access the Internet, the Mobile Directory Number
+(“MDN”) assigned to the Device and/or other Device-specific information may be
+transmitted over the Internet. Similarly, when you use the Device to send text
+messages through the Internet, e.g., sending a text message to another user’s
+wireless device by using the user’s wireless telephone number in the form of an
+email address, the MDN and/or other Device-specific information may be
+transmitted over the Internet.&nbsp; The MDN and other information can be used
+to identify Devices used in connection with the Services by <span class="GramE">us
+or third parties</span>. The MDN and other Device-specific information can be
+used for fraudulent or other illegal purposes as well as allow third parties to
+associate Internet usage with your Device. By agreeing to these Terms and using
+Internet-enabled services, you acknowledge and agree to allow for the
+transmission of the MDN and/or other Device-specific information and
+acknowledge that you understand the risks associated with the transmission of
+such Device-specific information.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Directory Assistance, Operator-Assisted and other Charges</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Calls made to
+directory assistance, operator-assisted calls, or pay-per-call services are not
+allowed.&nbsp; Likewise, premium messaging (such as donations via text message
+or paid premium content) is not allowed.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">PURCHASING AND CHANGING YOUR SERVICE PLANS</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Available plans,
+prices, and allowances may change at any time.&nbsp;&nbsp; If a plan that you
+have is changed, the change will be effective at the next cycle, and you will
+receive notification of the pending change.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Monthly Plans</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">A “Monthly Plan”
+consists of any combination of Monthly Domestic Voice Service, Monthly Domestic
+Data Service or Monthly Domestic Text Service (the “Monthly Services”) and is
+charged for on a recurring monthly basis.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Monthly Plan Purchases:&nbsp; You will initially select your Monthly
+Plan (if any) when you sign up for a <span class="SpellE">Zact</span>
+account.&nbsp; When you first establish your account and select your
+combination of voice, text, and data services, you will approve your initial
+Monthly Plan purchase and authorize automatic monthly charges via a credit card
+transaction checkout.&nbsp; Your Monthly Plan billing cycle for all subsequent
+months will commence on the day that you activate the first Device on your
+account (the “Cycle Start Day”).&nbsp; If the activation of the first Device on
+your account occurs on the last day of any month, your Cycle Start Day will be
+the last day of all subsequent months.<span style="mso-spacerun:yes"> 
+</span>For example, if the activation of the first Device on your account is on
+March 31, your second Cycle Start Day will be April 30 and thereafter the last
+day of all subsequent months. <span style="mso-spacerun:yes">  </span>Subsequent
+monthly billing cycles will automatically renew on the Cycle Start Day of each
+subsequent month and may be charged up to 48 hours prior to the Cycle Start
+Day.&nbsp; All Monthly Plan purchases are prepaid and cover your Monthly
+Services in the upcoming month.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Monthly Plan Upgrades and Downgrades:&nbsp; You may elect to upgrade
+or downgrade your Monthly Plan by selecting larger or smaller allowances at any
+time via the <span class="SpellE">Zact</span> Device(s) or the <span class="SpellE">Zact</span> website.&nbsp; Your upgrade or downgrade will be
+effective immediately.<span style="mso-spacerun:yes">  </span>Upon the change,
+you will receive account credit (for a downgrade), or pay the price difference (for
+an upgrade) between the former and new selected allowance.&nbsp; If your Monthly
+Plan is suspended for any reason, you will not be able to upgrade or downgrade
+your Monthly Plan, nor will you be able to purchase any Specialized Plans until
+your account is back in good standing.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Specialized Plans</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">“Specialized
+Plans” are offered in addition to your Monthly Plan (if you have one) to
+provide you the convenience of access to single event or one-time purchase of
+specific Services.&nbsp; The specialized Services may be specified and charged
+for on a basis of usage and/or time consistent with <span class="SpellE">ItsOn’s</span>
+“Fair Usage Policy”.&nbsp; Specialized Plans are charged in addition to the
+Monthly Plan (if you have one) and are billed to your account at the time of
+purchase.&nbsp; Specialized Plans will expire when the specified usage is used
+up, or when the specified time has elapsed.<b><span style="border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in"><o:p></o:p></span></b></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Another form of Specialized Plan is the “International Calling
+Plan”.&nbsp; International Calling Plans are offered to provide you the ability
+to make calls to international locations.&nbsp; For international calling, your
+selected allowance will be deducted for outbound calls as specified in the
+International Calling Plan selected.&nbsp; Calls will be rounded up to the
+nearest minute.<span style="mso-spacerun:yes">  </span>Incoming calls from
+international locations to your phone will be deducted from your existing (domestic)
+voice allowance. <span style="mso-spacerun:yes">  </span>For purpose of
+clarity, using your Device <u>from</u> International locations is not supported.<o:p></o:p></span></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:Calibri;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in">Monthly <span class="SpellE">Zact</span>
+Credit<o:p></o:p></span></b></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri">Accounts in good standing are eligible for a monthly <span class="SpellE">Zact</span> credit at the end of each billing cycle.<span style="mso-spacerun:yes">  </span>At the end of each cycle and for each service
+allowance in your Monthly Plan, we will credit your account an amount equal to the
+difference in price between the service allowance you selected and the service
+allowance closest to your actual usage without going under your actual usage.<span style="mso-spacerun:yes">  </span><span style="mso-spacerun:yes">  </span><b><span style="border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in"><o:p></o:p></span></b></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Account Activation</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Upon the
+activation (or reactivation) of your account, you may be charged an account
+activation fee.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Adding Additional Lines to Your Account</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">You will be
+charged a monthly line fee for each Device on your account.&nbsp; When a Device
+is added, the line fee amount may be prorated based on the time remaining in
+your current cycle.<span style="mso-spacerun:yes">  </span>If a Device is
+removed from the account, there will be no credit applied for that month’s
+billing cycle.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Payment</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Monthly Plan, fees
+and taxes will be automatically charged to your default payment method up to 48
+hours before the Cycle Start Day.&nbsp; Purchase of Specialized Plans may
+occasionally not trigger an immediate charge to your default payment
+method.&nbsp; In these cases, your account may show an outstanding balance due
+until the automatic payment is made to set your account balance to zero.&nbsp;
+You do not need to take any action unless the payment fails.&nbsp; If payment
+for your Monthly Plan fails, those plans may be suspended until successful
+payment is made. All purchases and changes to your plan, like upgrades or
+downgrades, require your account to be in good standing and without failed
+payments pending.&nbsp; You will be required to update your payment information
+in order to purchase new plans or modify your Monthly Services.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:Calibri">SUSPENSION AND TERMINATION OF
+SERVICES<o:p></o:p></span></b></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in;mso-bidi-font-weight:bold">Suspension<b>: </b></span><span style="font-size:11.0pt;font-family:Calibri">In certain situations, like
+billing disputes, fraud investigation, etc., we may suspend your Monthly Plan
+or account until resolution occurs.&nbsp; If your Monthly Plan or account is
+suspended for any reason, you cannot make use of Services for any purpose
+except for placing calls to emergency operators.<br>&nbsp;<br>Monthly Plan Suspension:&nbsp; Your Monthly Plan may be suspended if the charge
+to your payment method for your monthly plan fails.&nbsp; The suspended Monthly
+Plan will remain on your account but be unavailable for use until successful
+payment is made.&nbsp; Your Cycle Start Day will not be modified if your Monthly
+Plan is suspended. <span style="mso-spacerun:yes"> </span>In order to bring
+your account back into good standing, you will be required to pay all outstanding
+amounts due for all selected Services that are unpaid.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Account Termination:&nbsp; If a successful payment has not been made
+within 30 days of when your Monthly Plan was suspended, your account <span class="GramE">will<span style="mso-spacerun:yes">  </span>be</span> terminated and
+all active plans (including any that were still valid, like Specialized Plans will
+be removed from your account <span style="mso-spacerun:yes"> </span>and any
+unused Services will be forfeited.<br>&nbsp;<br>When your account is terminated, you may incur an account reactivation fee in
+addition to a new Monthly Plan selection in order to return your account to
+good standing.&nbsp; If your account is terminated, all Devices will be
+disassociated from your account and may permanently lose the current telephone
+numbers associated with such Devices.<span style="mso-spacerun:yes"> 
+</span>Even if you later bring your account into good standing after an Account
+Termination, we will likely not be able to provide you with the telephone
+numbers that were associated with your Devices prior to when your account was terminated.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">Suspension for Fraud Detection: In certain circumstances, the network
+provider on which we rely may terminate your Services immediately if the
+network provider detects fraud. In such circumstances, we do not have control over
+the termination but will work with you to restore Services if you believe it
+was <span class="GramE">done</span> in error.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">If we suspect fraudulent activity with any of the Devices on your
+account (e.g., software removed or hacked), we will flag the suspect Device and
+notify you of the potential fraud at your account email address.<span style="mso-spacerun:yes">  </span>We will allow the Device to continue
+operating under the following process:<o:p></o:p></span></p>
+
+<p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size:11.0pt;font-family:Calibri">The
+suspect Device will not be able to use allowances from the existing Monthly
+Plan or Specialized Plans, and we will automatically assign the suspect Device a
+set of custom plans, each charged immediately at a rate that is 15% above its
+current Monthly Plan rate (each a “Custom Plan”).<span style="mso-spacerun:yes">  </span>The set of custom plans are Voice 400, Text
+3500 and Data 1.5GB.<o:p></o:p></span></p>
+
+<p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size:11.0pt;font-family:Calibri">Any
+Domestic Roaming will be disabled.<o:p></o:p></span></p>
+
+<p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size:11.0pt;font-family:Calibri">If
+the suspect activity has not been resolved, we will charge you for another
+Custom Plan when the current one’s usage reaches 60% of the service allowance.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">In order to resolve, you must respond to the original fraud notice
+provided to you.&nbsp; When you respond to the fraud notice, and if we suspect
+there is a problem with the Device, you may be required to return the Device in
+order to restore it to good operating condition.&nbsp; In this case you may
+incur a restoration fee.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">If we determine that the detected fraud was in error, we will credit the
+15% premium that you paid and any applicable restoration fee.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">RESTRICTIONS ON USE OF SERVICE</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">You agree that
+our Services shall not be used: (a) to transmit anything that is in any manner
+illegal, fraudulent, threatening, abusive, libelous, defamatory, indecent,
+harassing, obscene, pornographic, harmful, or otherwise objectionable; (b) in
+any way that could damage or adversely affect our customers, vendors or
+suppliers, our reputation, network, property or Services or interfere with our
+operations; (c) to transmit spam or any unsolicited commercial content or bulk
+email (or activities that have the effect of facilitating unsolicited
+commercial content or unsolicited bulk content, regardless of the medium use to
+deliver such content - e.g., email, text, SMS, instant message, chat, or
+otherwise); (d) to infringe on or otherwise violate any patent, trademark,
+trade secret, copyright, right or privacy or publicity, or any other
+intellectual property or proprietary right of any person; (e) upload or
+transmit any “virus,” “worm,” or malicious code; (f) in any way prohibited by
+these Terms, the<span class="apple-converted-space">&nbsp;</span><span style="border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">Privacy Policy</span>, the<span class="apple-converted-space">&nbsp;</span><span style="border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">EULA</span>, any other <span class="SpellE">ItsOn</span> rules,
+policies or regulations; or (g) in any way prohibited by any international, federal,
+state, or local laws.&nbsp;You agree not to install or use any equipment or
+device such as a repeater to originate, amplify, enhance, retransmit or
+regenerate a transmitted radio signal to or from your Device.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">TERMINATION OF SERVICE</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Either party may terminate
+these Terms at any time.&nbsp; <span class="SpellE">ItsOn</span> reserves the
+right to terminate these Terms at any time without notice or liability for any
+reason, including, but not limited to: (1) if <span class="SpellE">ItsOn</span>
+ceases to provide Services in your area; (2) for any conduct believed to
+violate these Terms, the&nbsp;EULA&nbsp;and/or the&nbsp;Return and Exchange
+Policies; or (3) if fraudulent, illegal or abusive activity is suspected,
+including, but not limited to traffic pumping, spam messaging or interfering
+with <span class="SpellE">ItsOn’s</span> operations or other customers in any
+way.&nbsp; No refunds will be issued for unused Service under any
+circumstances.&nbsp; To cancel Service, you must email a written request with
+verification that you are the account holder to&nbsp;cs@zact.com.&nbsp; No
+refunds or credits will be issued for unused account balances.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">ACCOUNT INFORMATION</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span class="SpellE"><span style="font-size:11.0pt;font-family:Calibri">ItsOn</span></span><span style="font-size:11.0pt;font-family:Calibri"> requires you to provide an email
+address, account password and an answer to a security question associated with
+your account prior to providing account-related information in order to prevent
+unauthorized access. Additional verification may be required by customer
+service depending on the information sought by the inquiry.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">LOST OR STOLEN EQUIPMENT</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Notify us
+immediately if your Device is lost or stolen.&nbsp; You will remain liable for
+all charges and fees incurred by your Device until you have notified us of the
+alleged loss or theft and until such time as we can deactivate the
+Device.&nbsp; You agree to cooperate if we choose to investigate the matter
+(provide facts, sworn statements, etc.).<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">TAXES AND SURCHARGES</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">Stated rates do
+not include applicable taxes, fees and surcharges.&nbsp; Taxes, fees and
+surcharges will be specified at the time of each purchase transaction based on
+the address of the primary account holder and are subject to change without notice.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">PORTING POLICY</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span class="SpellE"><span style="font-size:11.0pt;font-family:Calibri">ItsOn</span></span><span style="font-size:11.0pt;font-family:Calibri"> does not guarantee that numbers
+will be successfully ported to or from another carrier.&nbsp; You acknowledge
+that any Device that has its number ported out will no longer be able to use
+the Services, until such time that the Device is reprogrammed for <span class="SpellE">Zact</span> Services. Any request to transfer the number for the last
+Device on your account to another carrier may be treated as a request for
+termination and all remaining account balances may be forfeited.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">DISPUTE RESOLUTION/BINDING ARBITRATION</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+font-family:Calibri">PLEASE READ THIS SECTION CAREFULLY AS IT AFFECTS RIGHTS
+THAT YOU MAY OTHERWISE HAVE. IT PROVIDES FOR RESOLUTION OF ALL DISPUTES AND
+CLAIMS (INCLUDING ONES THAT ALREADY ARE THE SUBJECT OF LITIGATION), THROUGH
+ARBITRATION INSTEAD OF SUING IN COURT IN THE EVENT THE PARTIES ARE UNABLE TO
+RESOLVE A DISPUTE. ARBITRATION IS BINDING AND SUBJECT TO ONLY A VERY LIMITED
+REVIEW BY A COURT. THIS ARBITRATION CLAUSE SHALL SURVIVE TERMINATION OF THESE
+TERMS.</span></b><span style="font-size:11.0pt;font-family:Calibri">&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">In the event of a dispute with <span class="SpellE">ItsOn</span>, before
+taking any legal action, you agree to first contact <span class="SpellE">ItsOn</span>
+and provide a written description of the nature of the dispute, all relevant
+documents and other information concerning the dispute and your proposed
+resolution. We agree to contact each other as described in the “Providing
+Notice to Each Other Under the Terms” section. If we are unable to reach a
+resolution of your dispute within sixty (60) days of your notice to <span class="SpellE">ItsOn</span>, you agree that instead of filing a lawsuit in a
+court of law, you will submit the dispute to binding arbitration as set forth
+below.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">This provision is intended to encompass all disputes or claims arising
+out of your relationship with <span class="SpellE">ItsOn</span> arising out of or
+relating to the Services or any Device or equipment used in connection with the
+Services (whether based in contract, tort, statute, fraud, misrepresentation or
+any other legal theory). Nothing contained in this arbitration provision shall
+preclude <span class="SpellE">ItsOn</span> from bringing claims concerning the
+unauthorized resale, export, alteration, and/or tampering of your Device, its
+software, the Service and/or PIN numbers in state or federal court. References
+to you and <span class="SpellE">ItsOn</span> include, where applicable, any
+respective subsidiaries, affiliates, <span class="GramE">predecessors</span> in
+interest, successors, and assigns. All claims will be resolved by binding
+arbitration where permitted by law.&nbsp;<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">The arbitration of any dispute or claim shall be conducted in
+accordance with the American Arbitration Association (&quot;AAA&quot;) under
+the Wireless Industry Arbitration Rules (&quot;WIA Rules&quot;), as modified by
+these Terms. You and <span class="SpellE">ItsOn</span> agree that use of the
+Services evidences a transaction in interstate commerce and this arbitration
+provision will be interpreted and enforced in accordance with the Federal
+Arbitration Act and federal arbitration law. All issues are for the arbitrator
+to decide, including the scope of this arbitration clause, but the arbitrator
+is bound by these Terms. You and <span class="SpellE">ItsOn</span> agree that any
+arbitration will be conducted on an individual basis and not on a consolidated,
+class wide or representative basis. Further, you agree that the arbitrator may
+not consolidate proceedings or more than one person’s claims, and may not
+otherwise preside over any form of a representative or class proceeding. If the
+preclusion of consolidated, class wide or representative proceedings is found
+to be unenforceable, then this entire arbitration clause shall be null and
+void.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><span style="font-size:11.0pt;font-family:
+Calibri">All fees and expenses of arbitration will be divided between you and <span class="SpellE">ItsOn</span> in accordance with the WIA Rules, except that <span class="SpellE">ItsOn</span> will reimburse you for the amount of the filing fee
+in the event you prevail in the arbitration. Each party will bear the expenses
+of its own counsel, experts, witnesses, and preparation and presentation of
+evidence. If for any reason this arbitration provision is deemed inapplicable
+or invalid, or to the extent this arbitration provision allows for litigation
+of disputes in court, you waive to the fullest extent permitted by law, (<span class="SpellE">i</span>) the right to a trial by jury and (ii) any claims for
+punitive or exemplary damages. Unless <span class="SpellE">ItsOn</span> and you
+agree otherwise, the location of any arbitration shall be Santa Clara County,
+California. Except where prohibited by law, <span class="SpellE">ItsOn</span> and
+you agree that no arbitrator has the authority to award punitive damages or any
+other damages not measured by the prevailing party’s actual damages. Neither
+you nor <span class="SpellE">ItsOn</span> shall disclose the existence, contents,
+or results of any arbitration except to the extent required by law. <span class="GramE">Judgment on the award rendered may be entered by any court having
+jurisdiction</span>.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">CHOICE OF LAW</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">These Terms shall
+be construed under the laws of California, without regard to its choice of law
+rules, except for the arbitration provision contained in these Terms, which
+will be governed by the Federal Arbitration Act. This governing law provision
+applies no matter where you reside, or where you use or pay for the Services.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;font-family:Calibri">DISCLAIMER OF WARRANTIES</span></b><span style="font-size:11.0pt;font-family:Calibri"><br><b style="mso-bidi-font-weight:normal">WIRELESS DEVICES AND RELATED EQUIPMENT:
+ITSON DOES NOT MANUFACTURE THE DEVICES OR RELATED ACCESSORY EQUIPMENT THAT YOU
+MAY PURCHASE FROM US. YOUR DEVICE AND RELATED ACCESSORY EQUIPMENT COME WITH A
+SEPARATE WRITTEN WARRANTY FROM THE MANUFACTURER. STATEMENTS BY ITSON OR ITS
+EMPLOYEES, REPRESENTATIVES AND/OR AGENTS REGARDING THE DEVICE OR RELATED
+ACCESSORY EQUIPMENT SHOULD NOT BE INTERPRETED AS A WARRANTY BY ITSON.&nbsp;
+ITSON MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, ABOUT THE <span class="GramE">SERVICE(</span>S), COMPATIBILITY, APPLICATIONS, YOUR DEVICE OR ANY
+RELATED EQUIPMENT, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS
+FOR A PARTICULAR PURPOSE.&nbsp; IN NO EVENT SHALL ITSON BE LIABLE FOR ACTUAL,
+INCIDENTAL, INDIRECT, SPECIAL, TREBLE, PUNITIVE, CONSEQUENTIAL OR OTHER DAMAGES
+(INCLUDING LOST REVENUES, LOST PROFITS, OR OTHER LOSS BY YOU) ARISING FROM THE
+MANUFACTURE OR WARRANTY OF THE DEVICE OR RELATED ACCESSORY EQUIPMENT. THIS
+DISCLAIMER DOES NOT DEPRIVE YOU OF ANY RIGHTS YOU MAY HAVE AGAINST THE
+MANUFACTURER.&nbsp; WITHOUT LIMITATION, ITSON WILL NOT BE LIABLE TO YOU IN
+CONNECTION WITH (1) THE MANUFACTURER'S WARRANTY, (2) ANY ACTIONS OR OMISSIONS
+OF THE MANUFACTURER, OR (3) ANY MALFUNCTION OR FAILURE OF THE DEVICE OR RELATED
+ACCESSORY EQUIPMENT OR SERVICES.&nbsp; ITSON AND ITS AGENTS, EMPLOYEES,
+REPRESENTATIVES, VENDORS AND SUPPLIERS (“ITSON PARTIES”) MAKE NO WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, (TO THE EXTENT ALLOWED BY
+LAW) ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE, TO YOU IN CONNECTION WITH YOUR USE OF THE SERVICES.&nbsp; THE ITSON
+PARTIES SHALL NOT BE LIABLE FOR ANY INCIDENTAL, INDIRECT, SPECIAL, TREBLE,
+PUNITIVE, CONSEQUENTIAL OR OTHER INDIRECT DAMAGES (INCLUDING LOST REVENUES,
+LOST PROFITS, OR OTHER LOSS BY YOU) TO THE FULL EXTENT THE SAME MAY BE
+DISCLAIMED BY LAW.&nbsp; YOU ACKNOWLEDGE THAT SERVICE INTERRUPTIONS WILL OCCUR
+FROM TIME TO TIME AND AGREE TO HOLD ALL WIRELESS PARTIES INVOLVED IN PROVIDING
+SERVICES HARMLESS FOR ALL SUCH INTERRUPTIONS.&nbsp; IN NO EVENT (TO THE EXTENT
+ALLOWED BY LAW) SHALL ANY WIRELESS PARTIES BE LIABLE FOR ECONOMIC LOSS,
+PERSONAL INJURIES, OR PROPERTY DAMAGE SUSTAINED BY YOU OR ANY THIRD PARTY
+ARISING FROM USE OF THE SERVICE OR THIS AGREEMENT.<o:p></o:p></b></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">LIMITATION OF LIABILITY</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">You agree that
+neither we nor our agents, employees, representatives, vendors, suppliers or
+licensors are responsible for any damages resulting from: (a) anything done or
+not done by someone else: (b) providing or failing to provide Services,
+including, but not limited to, deficiencies or problems with a Device or
+network coverage (for example, dropped, blocked, interrupted Services, etc.);
+(c) traffic or other accidents, or any health-related claims relating to our
+Services; (d) data content or information accessed while using our Services;
+(e) an interruption or failure in accessing or attempting to access emergency
+services from a Device, including through 911, Enhanced 911 or otherwise; (f)
+interrupted, failed, or inaccurate location information services, (g)
+information or communication that is blocked by a spam filter; (h) damage to your
+Device or any computer or equipment connected to your Device, or damage to or
+loss of any information stored on your Device, computer or equipment from your
+use of the Services or from viruses, worms, or downloads of malicious content,
+materials, data, text, images, video or audio; (<span class="SpellE">i</span>)
+incompatibilities with services, applications or accessories; or (<span class="SpellE">i</span>) things beyond our control, including acts of God (for
+example, weather-related phenomena, fire, earthquake, hurricane, etc.), riot,
+strike, war, terrorism or government orders or acts (collectively, “Force
+Majeure Events”). You should implement appropriate safeguards to secure your
+Device, computer or equipment and to back-up your information stored on each.<br><b style="mso-bidi-font-weight:normal">TO THE EXTENT ALLOWED BY LAW, OUR
+LIABILITY FOR MONETARY DAMAGES FOR ANY CLAIMS YOU MAY HAVE AGAINST US IS
+LIMITED TO NO MORE THAN THE PROPORTIONATE AMOUNT OF THE SERVICE CHARGES
+ATTRIBUTABLE TO THE AFFECTED PERIOD.&nbsp; UNDER NO CIRCUMSTANCES ARE WE LIABLE
+FOR ANY INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR SPECIAL DAMAGES OF ANY NATURE
+WHATSOEVER ARISING OUT OF OR RELATED TO PROVIDING OR FAILING TO PROVIDE
+SERVICES IN CONNECTION WITH A DEVICE, INCLUDING, BUT NOT LIMITED TO, LOST
+PROFITS, LOSS OF BUSINESS, OR COST OF REPLACEMENT PRODUCTS AND SERVICES.</b><o:p></o:p></span></p>
+
+<p style="margin-bottom:0in;margin-bottom:.0001pt;vertical-align:baseline"><span style="font-size:11.0pt;font-family:Calibri"><br><b style="mso-bidi-font-weight:normal">INDEMNIFICATION<o:p></o:p></b></span></p>
+
+<p style="margin-top:0in;vertical-align:baseline"><span style="font-size:11.0pt;
+font-family:Calibri">You agree to indemnify, defend and hold us harmless from
+any claims arising out of your actions, including, but not limited to, your use
+of the Services and any information you submit, post, transmit or make
+available via the Services, failing to provide appropriate notices regarding
+location-sensitive services (see the “Location Based Services” section),
+failure to safeguard your passwords, backup question to your shared secret
+question or other account information, or violating these Terms or any policy
+referenced in these Terms, any applicable law or regulation or the rights of
+any third party.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">CUSTOMER PROPRIETARY NETWORK INFORMATION (“CPNI”)</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">As we provide
+telecommunications products and Services to you, we maintain information about
+the quantity, technical configuration, type, destination and location of
+telecommunications products and Services you use, as well as some other
+information found on your bill (“CPNI”).&nbsp; Under federal law, you have the
+right, and we have a duty, to protect the confidentiality of your CPNI.&nbsp;
+For example, we implement safeguards that are designed to protect your CPNI,
+including authentication procedures when you contact us.&nbsp;Please also refer
+to the CPNI section of our Privacy Policy for additional information concerning
+CPNI.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">PROVIDING NOTICE TO EACH OTHER UNDER THE TERMS<span class="apple-converted-space">&nbsp;</span></span></b><span style="font-size:
+11.0pt;font-family:Calibri"><br>Unless the Terms,<span class="apple-converted-space">&nbsp;</span>Privacy Policy&nbsp;or
+the&nbsp;Return &amp; Exchange&nbsp;Policies specifically provide otherwise,
+you must provide us notice by emailing us at&nbsp;cs@zact.com. We may update
+these Terms to reflect changes in our offerings. We will provide you notice
+through one or more of the following: via the email you have provided us, via
+text message on your Device, on your bill, or written correspondence to your
+last known billing address. When we post changes to these Terms, we will revise
+the effective date at the top of these Terms. If we make any material changes
+to these Terms, we will notify you by sending an e-mail to the e-mail
+address(s) you provided to us, and by prominently posting notice of the changes
+on our website. We will give you an opportunity to cancel service if any
+material change adversely impacts you.<span style="mso-spacerun:yes"> 
+</span>Please see “Our Right to Change the Terms &amp; Your Related Rights” for
+the relevant details. We recommend that you check our website from time to time
+to inform yourself of any changes in these Terms or any of our other
+policies.<span style="mso-spacerun:yes">  </span>Any non-material changes to
+these Terms will not be sent to you via email; a notice of such non-material
+changes will be posted on the website; and your continued use of the Services
+and website after such revisions are posted shall constitute your acceptance the
+relevant revised terms and/or policies.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">OUR RIGHT TO CHANGE THE TERMS &amp; YOUR RELATED RIGHTS</span></b><b><span style="font-size:11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">We may change any
+part of these Terms (including your Rate Plan) at any time, including, but not
+limited to, rates, charges, how we calculate charges, or other provisions of
+the Terms. We will provide you with notice of material changes, and may provide
+you notice of non-material changes, in a manner consistent with these Terms
+(see the “Providing Notice to Each Other Under the Terms” section). If a change
+we make to the Terms is material and has a material adverse impact on your
+Services, you may terminate each line of Service materially affected and obtain
+a pro-rated refund of your monthly Service charges if you: (a) notify us via
+email at<span class="apple-converted-space">&nbsp;</span><span style="border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0in;padding:0in">cs@zact.com</span><span class="apple-converted-space">&nbsp;</span>within thirty (30) days after the
+effective date of the material adverse change; (b) specifically advise us as to
+how the change impacts you in a materially adverse manner; and (c) that you
+wish to cancel Services because of a material adverse change to these Terms. If
+you do not cancel Service within thirty (30) days of the material adverse
+change, you will not be eligible for a pro-rated refund of your monthly Service
+charges and our standard Terms governing “Termination of Service,” defined
+above in these Terms, will apply.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">ASSIGNMENT</span></b><b><span style="font-size:11.0pt;font-family:
+Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">We may assign all
+or part of our rights under these Terms without such assignment being
+considered a change to these Terms and without notice to you, except to the
+extent provided by law.&nbsp; We are then released from all liability.&nbsp;
+You may not assign these Terms without our prior written consent.&nbsp; Subject
+to these restrictions, these Terms will bind the heirs, successors, subcontractors,
+and assigns of the respective parties, who will receive its benefits.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">SEVERABILITY</span></b><b><span style="font-size:11.0pt;
+font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">All parts and
+provisions of these Terms are independent of each other.&nbsp; If any part or
+any provision of these Terms is or becomes illegal, invalid, inapplicable, or
+unenforceable, then: (a) that part or provision shall be construed, with as
+little modification as possible, to be a legal, valid, applicable, or
+enforceable part of these Terms, and so as to reflect as nearly as possible the
+original intent of the part or provision; or (b) the part or provision shall be
+ineffective only to the extent of such illegality, invalidity, inapplicability,
+or unenforceability, without in any way affecting the remaining portions of the
+part or provision, and without in any way affecting the other parts or
+provisions of these Terms.<o:p></o:p></span></p>
+
+<p style="vertical-align:baseline"><b><span style="font-size:11.0pt;font-family:
+Calibri;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in">OTHER MISCELLANEOUS TERMS</span></b><b><span style="font-size:
+11.0pt;font-family:Calibri"><br></span></b><span style="font-size:11.0pt;font-family:Calibri">(a<span class="GramE">)&nbsp;&nbsp;&nbsp; If</span> either of us waives or does not
+enforce a requirement under these Terms in an instance, we do not waive our
+right to later enforce that requirement.<br>(b<span class="GramE">)&nbsp;&nbsp;&nbsp; These</span> Terms and the documents it
+incorporates make up the entire agreement between us and replace all prior
+written or spoken agreements - you cannot rely on any contradictory documents
+or statements by sales or service representatives.<br>(c<span class="GramE">)&nbsp;&nbsp;&nbsp; The</span> rights, obligations and
+commitments in these Terms that, by their nature, would logically continue
+beyond the termination of Services (including, but not limited to, those
+relating to billing, payment, 911, dispute resolution, no class action, no jury
+trial), survive termination of Services.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+</html>

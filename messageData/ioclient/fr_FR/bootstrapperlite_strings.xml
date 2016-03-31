@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">
+Pas encore</string>
+  <string name="install">Oui, continue</string>
+  <string name="ok">Ok</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Nouveau service en cours d\'installation</string>
+  <string name="installing_dialog_text">Felicitations! Votre nouveau service sera bientôt prêt sans aucun frais</string>
+  <string name="installing_dismiss">Ok</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Abandonner l\'installation</string>
+  <string name="warning_dialog_text">En abandonnant l\'installation, vous allez perdre les avantages de ce nouveau type de service. Etes-vous sûr d\'abandonner?</string>
+  <string name="warning_back">Reconsidérer</string>
+  <string name="warning_confirm">Oui. Abandonner</string>
+  <string name="app_name">Optimiseur des connexions</string>
+  <string name="action_settings">Configuration</string>
+  <string name="hello_world">Bonjour, le monde!</string>
+  <string name="operator_title">Service Mobile</string>
+  <string name="connections_optimizer_subtext">Sélectionne le meilleur point d\'access wifi</string>
+  <!--Downloading-->
+  <string name="downloading">En cours de téléchargement</string>
+  <string name="downloaded">Téléchargement effectué. Redémarrez votre téléphone.</string>
+  <string name="app">Application</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Service de validation non disponible</string>
+  <string name="dt_title_operator_ineligible">Fournisseur de service non éligible</string>
+  <string name="dt_title_subscriber_ineligible">Non éligible</string>
+  <string name="dt_title_reboot">Bientôt terminé...</string>
+  <string name="dt_body_unknown">Le service n\'est pas disponible. Veuillez re-essayer plus tard.</string>
+  <string name="dt_body_operator_ineligible">Le service n\'est pas actuellement disponible avec votre fournisseur de service.</string>
+  <string name="dt_body_subscriber_ineligible">Le client attaché à cette carte SIM ou ce numéro de téléphone ne peut pas actuellement bénéficier de ce service.</string>
+  <string name="dt_body_reboot">Vous devez redémarrer votre téléphone pour utiliser ce service</string>
+  <string name="dt_button_restart">Redémarrer</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Votre téléphone n\'a pas d\'accès Internet. Cette opération ne pas être effectuée. Veuillez vous assurer que votre accès internet est en service.</string>
+  <string name="general_no_data_connection_title">Accès Internet non disponible</string>
+  <string name="general_airplane_mode_title">Réseau non disponible</string>
+  <string name="general_airplane_mode">Votre téléphone est en mode avion. Veuillez désactiver le mode avion depuis le menu configuration du téléphone.</string>
+</resources>

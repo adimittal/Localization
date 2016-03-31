@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="cancel">Şimdi değil</string>
+  <string name="install">Evet, devam et</string>
+  <string name="ok">Tamam</string>
+  <!--Downloading Dialog-->
+  <string name="installing_title">Yeni servis kuruluyor...</string>
+  <string name="installing_dialog_text">Tebrikler! Yeni servisiniz en kısa zamanda hazır olacaktır. Bu işlemler için ücretlendirilmeyeceksiniz.</string>
+  <string name="installing_dismiss">Tamam</string>
+  <!--Cancel Warning Dialog-->
+  <string name="warning_title">Kurulum işleminden vazgeç</string>
+  <string name="warning_dialog_text">Kurulum işleminden vazgeçerek, bu yeni mobil servisin tüm ayrıcalıklarını kaybedeceksiniz. Vazgeçmek istediğinizden emin misiniz?</string>
+  <string name="warning_back">Tekrar düşün</string>
+  <string name="warning_confirm">Evet, vazgeç.</string>
+  <string name="app_name">Connections Optimizer</string>
+  <string name="action_settings">Ayarlar</string>
+  <string name="hello_world">Merhaba!</string>
+  <string name="operator_title">Mobil Servis</string>
+  <string name="connections_optimizer_subtext">En iyi kişisel erişim noktasını otomatik olarak seç</string>
+  <!--Downloading-->
+  <string name="downloading">Yükleniyor</string>
+  <string name="downloaded">Yükleme tamamlandı. Lütfen telefonunuzu yeniden başlatın.</string>
+  <string name="app">Uygulama</string>
+  <!--Dialog Texts-->
+  <string name="dt_title_unknown">Doğrulama servisine ulaşılamadı.</string>
+  <string name="dt_title_operator_ineligible">Mobil operatörünüz tarafından desteklenmemektedir.</string>
+  <string name="dt_title_subscriber_ineligible">Kullanıcı desteklenmemekte</string>
+  <string name="dt_title_reboot">Neredeyse bitmek üzere!</string>
+  <string name="dt_body_unknown">Servise şuan ulaşılamadı. Daha sonra tekrar deneyiniz.</string>
+  <string name="dt_body_operator_ineligible">Mobil operatörünüz henüz bu servisi desteklememektedir.</string>
+  <string name="dt_body_subscriber_ineligible">Bu SIM karta ya da telefon numarasına ait kullanıcı henüz bu servisten yararlanmak için uygun değil.</string>
+  <string name="dt_body_reboot">Servisi kullanabilmeniz için telefonunuzu yeniden başlatmanız gerekmektedir </string>
+  <string name="dt_button_restart">Yeniden başlat</string>
+  <!--Initialization strings-->
+  <string name="general_no_data_connection">Cihazınızın internet bağlantısı bulunmamaktadır. İşlem tamamlanamadı. Lütfen internet bağlantınız olduğundan emin olunuz.</string>
+  <string name="general_no_data_connection_title">İnternet bağlantısı yok</string>
+  <string name="general_airplane_mode_title">Ağ bağlantısı yok</string>
+  <string name="general_airplane_mode">Cihazınız uçak modunda. Lütfen cihazınızı uçak modundan çıkarınız.</string>
+</resources>

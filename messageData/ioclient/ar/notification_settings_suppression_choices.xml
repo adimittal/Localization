@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="notif_settings_suppression_array">
+    <item>ذكرني دائماً</item>
+    <item>لا تذكرني لمدة 10 دقيقة</item>
+    <item>لا تذكرني لمدة ساعة </item>
+    <item>لا تذكرني لمدة 4 ساعات</item>
+    <item>لا تذكرني</item>
+  </string-array>
+</resources>

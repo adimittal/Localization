@@ -1,0 +1,137 @@
+// Only put branding text under the application
+
+/*
+ Localizable.strings
+ itsOn
+ 
+ Created by Mei Yu on 6/22/15.
+ Copyright (c) 2015 itsOn. All rights reserved.
+ */
+
+
+"oobe_activation_welcome" = "يا هلا بك في جوّي";
+"oobe_activation_create_button" = "إنشاء حساب جديد";
+"oobe_activation_join_button" = "عندي حساب";
+"oobe_activation_terms_conditions" = "شروط الخدمة";
+"oobe_one_time_password" = "OTP";
+"oobe_get_activation_code" = "الحصول على رمز التفعيل";
+"oobe_validate_activation_code" = "رمز التفعيل";
+"app_name" = "جوّي";
+"unexpected_error_occurred" = "المعذرة! حصل خطأ غير متوقع. ياليت تحاول مرة ثانية وإذا استمرت هالمشكلة تواصل معنا عشان نساعدك www.jawwy.sa/support";
+"account_suspension_your_account_is_suspended_but_cannot_be_resumed" = "تم تعليق حسابك وما تقدر تستمر. يا ليت تتواصل مع خدمة العملاء.";
+"help_main_page" = "www.jawwy.sa";
+"help_zact_website" = "موقع جوّي";
+"main_dashboard_myplans" = "باقاتي";
+"main_dashboard_myplans_description" = "صمّم وعدّل باقتك على راحتك";
+"manage_lines" = "أجهزتي";
+"main_dashboard_devices_description" = "شارك باقتك على أجهزتك الثانية";
+"catalog_title" = "إضافاتي";
+"main_dashboard_addons_description" = "عزّز باقتك، وأهدي الإضافات أو شاركها";
+"main_dashboard_billing" = "حسابي";
+"main_dashboard_billing_description" = "اشحن رصيدك وتابع صرفيتك";
+"main_dashboard_shop_online" = "المتجر";
+"main_dashboard_shop_online_description" = "اطّلع على جديد الأجهزة والإكسسوارات";
+"main_dashboard_get_support" = "المساعدة";
+"main_dashboard_get_support_description" = "ابحث في موقعنا أو تواصل معنا";
+"setup_password_query_account" = "اكتب كلمة السر";
+"sign_in_enter_account_credentials" = "اكتب بيانات حسابك";
+"account_suspension_your_account_is_suspended_but_cannot_be_resumed" = "تم تعليق حسابك وما تقدر تستمر. يا ليت تتواصل مع خدمة العملاء.";
+"duration_of_all_plans_will_remain_unchanged" = "موعد تجديد الباقة ما راح يتغير";
+
+"Unallocated" = "غير مخصص";
+"AllocationNotAllowed" = "التخصيص غير مسموح";
+ "MessageSetAllowanceBelowAlreadyUsedAmount" = "ما تقدر تخصص %.0f%@ لهذا الجهاز لأنه استهلك %.0f%@ من باقتك. يا ليت تخصص %.0f%@ أو أكثر لهذا الجهاز وتحاول مرة ثانية.";
+"RemovedDevice" = "إزالة الجهاز";
+"TopupAmount" = "قيمة الشحن";
+"TopUpAccount" = "سداد";
+"TopUpAccountId" = "حسابك في سداد";
+"AddMoneyWithAccount" = "الشحن باستخدام سداد";
+"UseAccountPurchased" = "استخدم نظام سداد\nلازم يكون المبلغ بين %@ و%@";
+"EnterTopUpCardPin" = "بطاقة شحن";
+"AddMoneyWithTopupCard" = "ببطاقات الشحن";
+"UseTopupCardPurchased" = "اشحن باستخدام رقم البطاقة المكوّن من 14 خانة";
+"TopupPinNumber" = "رقم بطاقة الشحن";
+"NotShared" = "لم تتم المشاركة";
+"TotalAllocation" = "مجموع التخصيص";
+"VoiceUsageRemaminingFormat"= "%.0f/%.0f دقائق باقية";
+"MessageUsageRemaminingFormat"= "%ld/%ld رسائل نصية متبقية";
+"DataUsageRemaminingFormat"= "%@%@ باقية";
+"UsageRemaminingFormat"= "%@ باقية";
+"BundleMessageSetAllowanceBelowAlreadyUsedAmount" = "ما تقدر تخصص %.0f%@ لهذا الجهاز لأي من الباقات اللي تعدت حدود المستخدم. حاول تختار تخصيص مرتفع.";
+"BundleMessageAllocationUsageTip" = "لازم يكون على الأقل %.0f%@";
+
+"billing_pin_card_associated" = "بطاقة الشحن مستخدمة من قبل";
+"PinNumberAddedToAccount" = "تمت إضافة بطاقة الشحن لحسابك";
+"WantToPurchaseDeviceOrSim" = "ودّك تشتري جهاز/ شريحة من جوّي؟";
+"CheckYourSimCardNotCompatible" = "يبدو أن شريحتك ما تطابقت مع جوّي";
+"SimNotCompatible" = "الشريحة غير مطابقة";
+"account_billing_title" = "حسابي";
+
+/*
+ * URL - not translated by need to provide different link for localized URL
+ */
+"eStore_link" = "http://shop.jawwy.sa";
+"eStore_link_stg" = "http://shop.jawwy.sa";
+"community_link" = "https://www.jawwy.sa/en/support/gethelp";
+"community_link_stg" = "https://jawwy.sa/en/content/support";
+"help_support_link" = "https://jawwy.sa/support";
+"subscriber_role_detail_manage_description" = "%@ يمكن شراء أو مشاركةالباقات وإدارة الأجهزة";
+"subscriber_role_detail_none_description" = "%@ لا يمكن شراء أو مشاركة الباقات وإدارة الأجهزة";
+
+"AuthenticationRequired" = "التوثيق مطلوب";
+"AuthenticationCancel" = "إلغاء";
+"AuthenticationLogin" = "تسجيل دخول";
+
+"TransferMoney" = "تحويل رصيد";
+"AccountHistory" = "مدفوعاتك";
+"TransferMoneyToDeviceForPayG" = "اشتري رصيد للخدمات الإضافية";
+"Activity" = "العملية";
+"TitlePinNumber" = "رقم البطاقة";
+"Deleting" = "جاري الحذف";
+"myplans_header_base_plan" = "مميزاتك الأساسية";
+"header_adjust" = "تغيير";
+"header_manage" = "تغيير";
+"myplans_buy_specialized_plans" = "اشتري إضافات";
+"myplans_monthly_difference" = "الفرق";
+"myplans_previous_plan_cost" = "الباقة الحالية";
+"myplans_new_plan_cost" = "الباقة الجديدة";
+"TransactionSuccessful" = "تمت العملية بنجاح";
+"AddedToPayGShort" = "%@ تمت الإضافة لرصيد الخدمات الإضافية بنجاح";
+"AddedToPayG" = "%@ أضيفت لحسابك بنجاح %@.";
+"AddedToPayGFull" = "%@ أضيفت لحسابك بنجاح %@.";
+"GiftMoney" = "إهداء";
+"GiftToAnotherAccount" = "اهديها لأحد";
+"TopupTransferGift" = "اشحن أو اهدي الرصيد";
+"PAYG" = "رصيد الخدمات الإضافية";
+"myplans_header_one_time" = "إضافاتي";
+"myplans_header_get_add_ons" = "أضف";
+"myplans_account_balance" = "الرصيد الحالي";
+"AddCreditDebitCard" = "إضافة بطاقة ائتمانية/مدى";
+"SelectCreditDebitCard" = "اختر بطاقة بطاقة ائتمانية/مدى";
+
+"AppLanguage" = "لغة التطبيق";
+"DeviceLanguage" = "لغة الجهاز";
+"PleaseRestart" = "يا ليت تعيد تشغيل التطبيق عشان يتم تنفيذ التغييرات";
+"Dismiss" = "تجاهل";
+"OrderReceivedComment" = "مشكور!";
+"myplans_account_balance" = "الرصيد الحالي";
+"myplans_credit_debit_card" = "بطاقة ائتمانية/مدى";
+"AddMoneyWithCreditCard" = "الشحن بالبطاقة الائتمانية/مدى";
+"myplans_enter_credit_card_info" = "أدخل معلومات البطاقة الائتمانية/مدى";
+"AddCreditDebitCard" = "إضافة بطاقة ائتمانية/مدى";
+"NoCreditDebitCardOnFile" = "لا توجد بطاقة ائتمانية/مدى مسجلة";
+"SelectCreditDebitCard" = "اختر بطاقة بطاقة ائتمانية/مدى";
+"NoAutoPayCardDesignated" = "ما فيه بطاقة مفعلة للدفع التلقائي";
+"YouHaveNotDesignatedCreditCard"="اختار بطاقة لاستخدامها في الدفع التلقائي";
+"PayGHistory" = "مدفوعات الخدمات الإضافية";
+"UseAccountPurchased" = "استخدم نظام سداد\nلازم يكون المبلغ بين %@ و%@";
+"MaximumAndMinimumPaymentMethod" = "القيمة لازم تكون بين %@ و %@ باليوم";
+"PayGHistoryCurrentBalance" = "رصيدك للخدمات الإضافية هو";
+"FormatYourCurrentBalance" = "رصيدك الحالي: %@";
+"HeaderAddCard" = "إضافة بطاقة جديدة";
+"CheckingOut"   = "طلبك تحت التنفيذ...";
+"AccountNotificationLanguage" = "لغة تنبيهات الحساب";
+
+"BuySpecialPlans" = "اشتري إضافات";
+"HomeNameLogo" = "جوّي - بيتا";
+"CurrencySymbol" = "ريال";
