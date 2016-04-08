@@ -124,13 +124,12 @@ return array(
   "message-Sapphire_Amount_Not_Valid" => "Amount must be from %(min)s to %(max)s. Please enter a different amount.",
   "message-No_Invoice" => "There are no invoices.",
   "message-Sadad_Id_Invalid" => "Sadad ID not found.",
-  "message-Load_Sadad_Problem" => "Problem payment with Sadad. Please try again later.",
+  "message-Load_Sadad_Problem" => "Sadad ID not found. Please correct the ID and try again.",
   "message-Register_Account_Error_User_Registered" => "Sign Up Error: The social network id you had used is already registered.  Please clear your browser cache then click on TRY AGAIN button.",
   "message-Register_Account_Error_User_EmptyInfo" => "Sign Up Error: The social network id you had used is empty.  Please clear your browser cache then click on TRY AGAIN button.",
   "message-Register_Account_Error_Login_After_Registered" => "Sign Up error: Please clear your browser cache then click on TRY AGAIN button.",
   "message-Register_Account_Error_Subscriber_Unprovisioned" => "Error: Phone Number is Unprovisioned.",
   "message-Load_Credit_Card_Problem" => "Problem load adding credit card form. Please try again later.",
-  "message-Load_Sadad_Problem" => "Problem payment with Sadad. Please try again later.",
   "message-Coupon_Applied" => "Coupon applied!",
   "message-Coupon_Not_Found" => "We can't find this code. Double check and try again.",
   "message-Coupon_Invalid" => "Invalid code format.",
@@ -149,5 +148,6 @@ return array(
   'message-Expried_Plan_Error' => 'The plan is expired or does not exist.',
   'message-Verify_OTP_InCorrect' => 'Incorrect PIN. Please verify that it matchs the PIN you received via SMS',
   "message-Join_Device_Successful"=> "Joinning subscriber is in process: Your order is on its way and will be available soon.",
-  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site."
+  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site.",
+  "message-Get_User_Pending_Error" => "Sign Up Error: An exception occurred during processing, please try again.",
 );

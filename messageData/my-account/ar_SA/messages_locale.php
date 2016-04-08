@@ -123,13 +123,12 @@ return array(
   "message-Sapphire_Amount_Not_Valid" => "قيمة الشحن لازم تكون بين %(min)s و %(max)s",
   "message-No_Invoice" => "ما فيه شي ينعرض",
   "message-Sadad_Id_Invalid" => "حساب سداد غير موجود",
-  "message-Load_Sadad_Problem" => "حصلت مشكلة في الدفع عن طريق سداد. يا ليت تحاول في وقت ثاني.",
+  "message-Load_Sadad_Problem" => "Sadad ID not found. Please correct the ID and try again.",
   "message-Register_Account_Error_User_Registered" => "الحساب اللي استخدمته مسجّل حالياً. يا ليت تحاول مرة ثانية.",
   "message-Register_Account_Error_User_EmptyInfo" => "يا ليت تحاول مرة ثانية وتستخدم حساب في الشبكات الاجتماعية.",
   "message-Register_Account_Error_Login_After_Registered" => "يا ليت تحدّث المتصفح وتحاول مرة ثانية.",
   "message-Register_Account_Error_Subscriber_Unprovisioned" => "الرقم غير مفعّل.",
   "message-Load_Credit_Card_Problem" => "فيه خطأ في عرض البطاقة. يا ليت تحاول مرة ثانية.",
-  "message-Load_Sadad_Problem" => "حصلت مشكلة في الدفع عن طريق سداد. يا ليت تحاول في وقت ثاني.",
   "message-Coupon_Applied" => "تم تطبيق الكوبون!",
   "message-Coupon_Not_Found" => "فيه خطأ في الكوبون. يا ليت تتأكد وتحاول مرة ثانية.",
   "message-Coupon_Invalid" => "الرقم غير صحيح",
@@ -148,5 +147,6 @@ return array(
   'message-Expried_Plan_Error' => 'الباقة منتهية أو غير موجودة.',
   'message-Verify_OTP_InCorrect' => 'الرمز خطأ. يا ليت تكتب الرمز اللي استملته في الرسالة.',
   "message-Join_Device_Successful"=> "Joinning subscriber is in process: Your order is on its way and will be available soon.",
-  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site."
+  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site.",
+  "message-Get_User_Pending_Error" => "Sign Up Error: An exception occurred during processing, please try again.",
 );

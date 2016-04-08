@@ -159,17 +159,19 @@ class Translation extends AbstractModel {
      */
     $source_language_code = $this->getProjectDetails($project)->source_language_code;
     $resourcesToUpdate = array($source_language_code => $this->getProjectResourcesArray($project));
+    
+    $uploadDetails = [];
 
     foreach ($resourcesToUpdate as $language => $resourceSlugs) {
       $this->resourceLang = $language;
       $resourcePath = $messagesDir . '/' . $language;
       foreach ($resourceSlugs as $resourceSlug => $filename) {
         $messages_file = $resourcePath . '/' . $filename;
-        $this->updateResource($projectSlug, $resourceSlug, $messages_file);
+        $uploadDetails["$project : $messages_file : $resourceSlug"] = $this->updateResource($projectSlug, $resourceSlug, $messages_file);
       }
     }
 
-    return true;
+    return $uploadDetails;
   }
 
   /**
@@ -268,7 +270,7 @@ class Translation extends AbstractModel {
     $this->tb->messages_file_type = $this->discoverMessagesFileType($this->tb->messages_file);
     $this->tb->required = array('project', 'messages_file');
 
-    echo $this->translateService->updateResource($this->tb);
+    return json_decode($this->translateService->updateResource($this->tb));
   }
 
   public function deleteResource() {

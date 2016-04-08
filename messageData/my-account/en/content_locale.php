@@ -469,7 +469,7 @@
   "label-Reason_Ineligible_Product" => "You are ineglible to buy this product.",
   "label-Reason_Ineligible" => "You are ineglible because of all the following",
   "label-Pending_Change_On" => "Will change to %(plan)s on ",
-  "title-Verify_User" => "Verify SSO User ID",
+  "title-Verify_User" => "Verify Process Running",
   "title-OOBE_SignUp" => "My Account - SignUp",
   "label-OOBE-ProvisionSubscriber" => "Please enter your phone number",
   "label-OOBE-ProvisionSubscriber-PhoneNumber" => "Phone number",

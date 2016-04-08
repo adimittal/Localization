@@ -53,7 +53,13 @@ class TranslationController extends BaseController {
    */
   public function actionDownloadfromtransifex() {
     $project = $_GET['project'];
-    return $this->model->downloadTranslationsFromTransifex($project);
+    $error = new \app\components\Error();
+    
+    if($this->model->downloadTranslationsFromTransifex($project)) {
+      return json_encode($error);
+    }
+    $error->fail("Failed to download the files from transifex to localization repo");
+    return json_encode($error);
   }
   
   /**
@@ -63,24 +69,29 @@ class TranslationController extends BaseController {
    */
   public function actionUploadtotransifex() {
     $project = $_GET['project'];
-    return $this->model->uploadResourcesInTransifex($project);
+    return json_encode($this->model->uploadResourcesInTransifex($project));
   }
   
   /**
    * Upload translations to this localization repo
-   * curl -X POST -H "Content-type: multipart/form-data" -F 'UploadForm[project]=myaccount' -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/content_locale.php -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/forms_locale.php http://localization.dev.itsonsaas.net:8000/translation/upload?project=myaccount
+   * curl -X POST -H "Content-type: multipart/form-data" -H "Accept: application/json" -F 'UploadForm[project]=myaccount' -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/content_locale.php -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/forms_locale.php http://localization.dev.itsonsaas.net:8000/translation/upload?project=myaccount
    * @return string
    */
     public function actionUpload() {
     $model = new UploadForm();
+    $error = new \app\components\Error();
 
     if (Yii::$app->request->isPost) {
       $model->load(Yii::$app->request->post());
       $model->messageFiles = UploadedFile::getInstances($model, 'messageFiles');
       if ($model->upload()) {
+        if(Yii::$app->request->headers->get('Accept') == 'application/json') {
+          return json_encode($error);
+        }
         return $this->render('upload-confirm', ['model' => $model]);
       }
-      return "failed.";
+      $error->fail("Failed to upload the files");
+      return json_encode($error);
     }
     else {
       // either the page is initially displayed or there is some validation error
@@ -97,13 +108,15 @@ class TranslationController extends BaseController {
    */
   public function actionDownload() {
     $model = new DownloadForm();
+    $error = new \app\components\Error();
 
     if (Yii::$app->request->isPost) {
       $model->load(Yii::$app->request->post());
       if ($model->download()) {
-        return;
+        return; //we don't send any message as we're sending the actual zip file
       }
-      return "failed.";
+      $error->fail("Failed to download the files");
+      return json_encode($error);
     }
     else {
       // either the page is initially displayed or there is some validation error

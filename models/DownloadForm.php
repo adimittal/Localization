@@ -35,7 +35,8 @@ class DownloadForm extends Model {
         $this->downloadZipArchive($zipFilename);
         return true;
       }
-      return "Failed creating zip file archive";
+      $error = new \app\components\Error();
+      return $error->fail("Failed creating zip file archive");
     }
     else {
       return false;

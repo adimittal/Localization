@@ -148,5 +148,6 @@ return array(
   'message-Expried_Plan_Error' => 'The plan is expired or does not exist.',
   'message-Verify_OTP_InCorrect' => 'Incorrect PIN. Please verify that it matchs the PIN you received via SMS',
   "message-Join_Device_Successful"=> "Joinning subscriber is in process: Your order is on its way and will be available soon.",
-  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site."
+  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site.",
+  "message-Get_User_Pending_Error" => "Sign Up Error: An exception occurred during processing, please try again.",
 );
