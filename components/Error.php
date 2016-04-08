@@ -2,6 +2,8 @@
 
 namespace app\components;
 
+use Yii;
+
 /**
  * Error object
  *
@@ -18,7 +20,7 @@ class Error {
     $this->success();
   }
   
-  public function success($message = "No error", $code = 0, $status = 'Success', $http_response_code = "200") {
+  public function success($message = "No error", $code = 0, $status = 'Success', $http_response_code = 200) {
     $this->code = $code;
     $this->status = $status;
     $this->message = $message;
@@ -27,13 +29,13 @@ class Error {
     return $this;
   }
   
-  public function fail($message = "Unknown failure", $code = 1, $status = 'Fail', $http_response_code = "400") {
+  public function fail($message = "Unknown failure", $code = 1, $status = 'Fail', $http_response_code = 400) {
     $this->code = $code;
     $this->status = $status;
     $this->message = $message;
     $this->http_response_code = $http_response_code;
     
-    http_response_code($http_response_code);
+    Yii::$app->response->statusCode = $http_response_code;
     
     return $this;
   }

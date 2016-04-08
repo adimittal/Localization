@@ -6,7 +6,7 @@ use ZipArchive;
 use yii\base\Model;
 use RecursiveIteratorIterator;
 use RecursiveDirectoryIterator;
-use yii\base\Exception;
+use Exception;
 
 class DownloadForm extends Model {
 
@@ -19,12 +19,13 @@ class DownloadForm extends Model {
   }
 
   public function download() {
+    $error = new \app\components\Error();
     $cm = new \app\components\ConfigManager();
     try {
       $projectSlug = $cm->getSlug($this->project);
     }
     catch (Exception $ex) {
-      return $ex->getMessage();
+      return $error->fail($ex->getMessage());
     };
     $dirToZip = $cm->getMessageDataPath($projectSlug);
     $zippath = $cm->getDownloadableZipPath();
@@ -33,13 +34,12 @@ class DownloadForm extends Model {
       $this->createZipArchive($dirToZip, $zipFilename);
       if (is_file($zipFilename)) {
         $this->downloadZipArchive($zipFilename);
-        return true;
+        return $error;
       }
-      $error = new \app\components\Error();
       return $error->fail("Failed creating zip file archive");
     }
     else {
-      return false;
+      return $error->fail("Request could not be validated, maybe missing project name?");;
     }
   }
 
@@ -51,6 +51,7 @@ class DownloadForm extends Model {
     header("Pragma: no-cache");
     header("Expires: 0");
     readfile("$archive_file_name");
+    die;
   }
 
   private function createZipArchive($dir, $filename) {

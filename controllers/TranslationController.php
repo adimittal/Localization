@@ -108,15 +108,10 @@ class TranslationController extends BaseController {
    */
   public function actionDownload() {
     $model = new DownloadForm();
-    $error = new \app\components\Error();
 
     if (Yii::$app->request->isPost) {
       $model->load(Yii::$app->request->post());
-      if ($model->download()) {
-        return; //we don't send any message as we're sending the actual zip file
-      }
-      $error->fail("Failed to download the files");
-      return json_encode($error);
+      return json_encode($model->download());
     }
     else {
       // either the page is initially displayed or there is some validation error

@@ -3,7 +3,7 @@
 namespace app\components;
 
 use Yii;
-use yii\base\Exception;
+use Exception;
 
 /**
  * Description of ConfigManager
