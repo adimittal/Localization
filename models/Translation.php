@@ -113,6 +113,14 @@ class Translation extends AbstractModel {
     switch ($ext) {
       case 'php' :
         return 'PHP_ARRAY'; break;
+      case 'strings' :
+        return 'STRINGS'; break;
+      case 'html' :
+        return 'HTML'; break;
+      case 'xml' :
+        return 'ANDROID'; break;
+      case '' :
+        return 'HTML'; break;
       default:
         throw new Exception("Could not discover the message file type for Transifex from extension $ext");
     }
