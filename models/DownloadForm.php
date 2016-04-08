@@ -18,16 +18,35 @@ class DownloadForm extends Model {
     ];
   }
 
+  public function recurse_copy($src, $dst) {
+    $dir = opendir($src);
+    @mkdir($dst);
+    while (false !== ( $file = readdir($dir))) {
+      if (( $file != '.' ) && ( $file != '..' )) {
+        if (is_dir($src . '/' . $file)) {
+          recurse_copy($src . '/' . $file, $dst . '/' . $file);
+        }
+        else {
+          copy($src . '/' . $file, $dst . '/' . $file);
+        }
+      }
+    }
+    closedir($dir);
+    return true;
+  }
+
   public function download() {
     $error = new \app\components\Error();
     $cm = new \app\components\ConfigManager();
     try {
       $projectSlug = $cm->getSlug($this->project);
+      $dirToZip = $cm->getMessageDataPath($projectSlug);
+      $this->archiveHandler($projectSlug, $dirToZip); //any project specific things before archiving
     }
     catch (Exception $ex) {
       return $error->fail($ex->getMessage());
     };
-    $dirToZip = $cm->getMessageDataPath($projectSlug);
+
     $zippath = $cm->getDownloadableZipPath();
     $zipFilename = "$zippath/$projectSlug.zip";
     if ($this->validate()) {
@@ -39,8 +58,21 @@ class DownloadForm extends Model {
       return $error->fail("Failed creating zip file archive");
     }
     else {
-      return $error->fail("Request could not be validated, maybe missing project name?");;
+      return $error->fail("Request could not be validated, maybe missing project name?");
+      ;
     }
+  }
+
+  private function archiveHandler($projectslug, $dirToZip) {
+    if ($projectslug == 'my-account') {
+      //copy ar_SA to ar and es_MX to es
+      if (!$this->recurse_copy($dirToZip . "/ar_SA", $dirToZip . "/ar") 
+        || !$this->recurse_copy($dirToZip . "/es_MX", $dirToZip . "/es")) {
+        throw new Exception("Failed to copy to $dirToZip");
+      }
+    }
+
+    return true;
   }
 
   private function downloadZipArchive($archive_file_name) {

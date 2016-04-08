@@ -1,6 +1,9 @@
 # phpstorm project files
 .idea
 
+#the zip files we keep creating in the project
+/web/downloadableZip/*.zip
+
 # netbeans project files
 nbproject
 
