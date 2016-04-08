@@ -453,6 +453,7 @@ PIN del número de transferencia</li><li>En la sección <b>Other</b>, selecciona
   "message-Password_Requirements_Rule_2_1" => "Una letra minuscula",
   "message-Password_Requirements_Rule_2_2" => "Una letra mayuscula",
   "message-Password_Requirements_Rule_2_3" => "Un numero",
+  "message-Password_Requirements_Rule_2_4" => "One special character",
   "message-Phone_Number" => "Número telefónico",
   "message-Phone_Numbers" => "Numeros Telefonicos",
   "message-Placeholder_enter_by_type" => "Introduzca un %(type)s válido",

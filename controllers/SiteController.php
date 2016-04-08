@@ -7,8 +7,6 @@ use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\UploadForm;
-use yii\web\UploadedFile;
 
 class SiteController extends BaseController {
 
@@ -84,24 +82,6 @@ class SiteController extends BaseController {
 
   public function actionAbout() {
     return $this->render('about');
-  }
-
-  public function actionUpload() {
-    $model = new UploadForm();
-
-    if (Yii::$app->request->isPost) {
-      $model->messageFiles = UploadedFile::getInstances($model, 'messageFiles');
-      if ($model->upload()) {
-        print_r("success"); // file is uploaded successfully
-        return;
-      }
-      else {
-        print_r("Failed to upload.  Perhaps due to validation errors.");
-        return;
-      }
-    }
-
-    return $this->render('upload', ['model' => $model]);
   }
 
 }

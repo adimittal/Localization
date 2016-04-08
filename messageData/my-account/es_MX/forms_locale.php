@@ -20,6 +20,8 @@ return array(
   "btn-Delete_Card" => "Yes, delete this card",
   "btn-Remove_Card_Confirm" => "Remove",
   "btn-Login" => "Sign In",
+  "btn-Sadad_Login" => "Login",
+  "btn-Go" => "Go",
   "btn-Next" => "Next",
   "btn-Return_To_Login_Screen" => "Return to the sign-in screen",
   "btn-Save" => "Save",
@@ -65,6 +67,6 @@ return array(
   "btn-Remove-Subscriber" => "Remove Subscriber",
   "btn-Buy" => "Buy",
   "btn-tryAgain" => "Try Again",
-  "title-OOBE_Verify_OTP" => "Enter OTP code",
+  "title-OOBE_Verify_OTP" => "Enter OTP code *",
   "btn-Add" => "Add",
 );

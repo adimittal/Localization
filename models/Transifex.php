@@ -85,14 +85,14 @@ class Transifex extends AbstractModel {
    * @param $i18n_type - can be 'PO' or 'PHP_ARRAY'  (Yii messages files are PHP_ARRAY so we'll default to that)
    * @return mixed
    */
-  public function createResource($resourceName, $resourceSlug, $file, $i18n_type) {
+  public function createResource($resourceName, $resourceSlug, $filePath, $i18n_type) {
     $url = $this->transifexUrl . "project/$this->projectName/resources";
-    $body = array(
+    $data = array(
       'name' => $resourceName,
       'slug' => $resourceSlug,
-      'i18n_type' => $i18n_type
+      'i18n_type' => $i18n_type,
+      'content' => new \CurlFile($filePath)  //used to be "@$filePath" but that is deprecated
     );
-    $data = $this->curl->getCurlFile($file, $body);
 
     return $this->call($url, $data, 'POST');
   }
@@ -104,9 +104,11 @@ class Transifex extends AbstractModel {
    * @param $file
    * @return mixed
    */
-  public function putResource($resourceSlug, $file) {
+  public function putResource($resourceSlug, $filePath) {
     $url = $this->transifexUrl . "project/$this->projectName/resource/$resourceSlug/content";
-    $data = $this->curl->getCurlFile($file);
+    $data = array(
+      'content' => new \CurlFile($filePath)  //used to be "@$filePath" but that is deprecated
+    );
 
     return $this->call($url, $data, 'PUT');
   }

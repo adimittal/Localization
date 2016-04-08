@@ -15,11 +15,7 @@ class Translation extends AbstractModel {
   protected $tb; //translation builder
   private $translateService; //translation service
   private $translateStore; //translation store service
-  private $portalslug = 'itsonportal';
-  private $myaccountslug = 'my-account';
-  private $iosliteclientslug = 'iosliteclient';
-  private $temmandroidslug = 'ioclient-temm-android';
-  private $ioclientslug = 'ioclient';
+  public $resourceLang = 'en'; //the resource language
 
   public function init(TranslationBuilder $tb) {
     $this->tb = $tb;
@@ -46,20 +42,13 @@ class Translation extends AbstractModel {
   }
 
   private function getSlug($project) {
-    switch ($project) {
-      case 'portal' :
-        return $this->portalslug;
-      case 'myaccount' :
-        return $this->myaccountslug;
-      case 'iosliteclient' :
-        return $this->iosliteclientslug;
-      case 'temmandroid' :
-        return $this->temmandroidslug;
-      case 'ioclient' :
-        return $this->ioclientslug;
-      default :
-        throw new Exception("Please provide a valid project name");
+    try {
+      $slug = $this->configManager->getSlug($project);
+    } catch (Exception $ex) {
+      $error = $ex->getMessage();
+      return ['error' => $error];
     }
+    return $slug;
   }
 
   public function getProjectDetails($project) {
@@ -118,6 +107,37 @@ class Translation extends AbstractModel {
 
     return $localeArray;
   }
+  
+  private function discoverMessagesFileType($filename) {
+    $ext = pathinfo($filename, PATHINFO_EXTENSION);
+    switch ($ext) {
+      case 'php' :
+        return 'PHP_ARRAY'; break;
+      default:
+        throw new Exception("Could not discover the message file type for Transifex from extension $ext");
+    }
+  }
+
+  /**
+   * Upload a new resource to transifex
+   * @param $resourceArray - filenames Ex: ['test.php', 'test2.php']
+   */
+  public function uploadNewResourcesInTransifex($project, $resources) {
+
+    $projectSlug = $this->getSlug($project);
+
+    $this->tb->service = 'transifex';
+    $this->tb->project = $projectSlug;
+    $resourceDir = $this->configManager->getMessageDataPath($projectSlug)."/$this->resourceLang";
+
+    foreach ($resources as $r) {
+      $this->tb->messages_file = $resourceDir."/".$r;
+      $this->tb->messages_file_type = $this->discoverMessagesFileType($r);
+      $this->tb->required = array('project', 'messages_file');
+
+      echo $this->translateService->createResource($this->tb);
+    }
+  }
 
   /**
    * Update the portal resources for transifex
@@ -133,9 +153,10 @@ class Translation extends AbstractModel {
     $resourcesToUpdate = array($source_language_code => $this->getProjectResourcesArray($project));
 
     foreach ($resourcesToUpdate as $language => $resourceSlugs) {
-      $languagePath = $messagesDir . '/' . $language;
+      $this->resourceLang = $language;
+      $resourcePath = $messagesDir . '/' . $language;
       foreach ($resourceSlugs as $resourceSlug => $filename) {
-        $messages_file = $languagePath . '/' . $filename;
+        $messages_file = $resourcePath . '/' . $filename;
         $this->updateResource($projectSlug, $resourceSlug, $messages_file);
       }
     }
@@ -176,13 +197,13 @@ class Translation extends AbstractModel {
 
     return true;
   }
-  
+
   private function writeLanguageFile($languagePath, $filename, $translation) {
     if (!is_dir("$languagePath/")) {
-          //the message dir doesn't exist, make it and let it be writable
-          mkdir("$languagePath/", 0777, true);
-        }
-        file_put_contents($languagePath . '/' . $filename, $translation);
+      //the message dir doesn't exist, make it and let it be writable
+      mkdir("$languagePath/", 0777, true);
+    }
+    file_put_contents($languagePath . '/' . $filename, $translation);
   }
 
   /**
@@ -224,6 +245,9 @@ class Translation extends AbstractModel {
 
   public function updateResource($project = null, $resourceSlug = null, $messages_file = null) {
     $this->tb->service = 'transifex';
+    $this->tb->project = $project;
+    $this->tb->messages_file = $messages_file;
+    $this->tb->resourceSlug = $resourceSlug;
     if (empty($project)) {
       $this->tb->project = $this->p->getGet('project');
     }
@@ -233,7 +257,7 @@ class Translation extends AbstractModel {
     if (empty($resourceSlug)) {
       $this->tb->resourceSlug = $this->p->getPut('resourceSlug');
     }
-    $this->tb->messages_file_type = 'PHP_ARRAY';
+    $this->tb->messages_file_type = $this->discoverMessagesFileType($this->tb->messages_file);
     $this->tb->required = array('project', 'messages_file');
 
     echo $this->translateService->updateResource($this->tb);

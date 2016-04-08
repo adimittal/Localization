@@ -55,8 +55,10 @@ return array(
   "message-System_Error" => "There has been a system error",
   "message-Confirm_Remove_Subscriber" => "Do you really want to remove the subscriber",
   "message-TopUpPin_Not_Found" => "Please enter Top-up PIN",
-  "message-TopUpPin_Success" => "$15 was added to your account balance.",
+  "message-TopUpPin_Success" => "%(amount)s was added to your account balance.",
+  "message-TopUpPin_Required" => "Voucher Number is required.",
   "message-TopUpPin_Not_Valid" => "PIN Card: PIN is not valid.",
+  "message-TopUpSadad_Success" => "Add Money with Sadad completed successfully.",
   "message-Uncancel_Subcription_Success" => "This plan will be renewed at the end of your current billing period.",
   "message-AccountNotificationLanguage_Fail" => "Account notification language update failure",
   "message-AccountNotificationLanguage_Success" => "Account notification language has been corrected<br/>Notification language was changed",
@@ -147,4 +149,5 @@ return array(
   'message-Expried_Plan_Error' => 'The plan is expired or does not exist.',
   'message-Verify_OTP_InCorrect' => 'Incorrect PIN. Please verify that it matchs the PIN you received via SMS',
   "message-Join_Device_Successful"=> "Joinning subscriber is in process: Your order is on its way and will be available soon.",
+  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site."
 );

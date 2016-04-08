@@ -22,18 +22,24 @@ $this->title = 'Saas Localization';
         <div class="row">
             
             <?php
-            
+            echo <<<HT
+              <br /><br />
+              <div class="col-lg-4">
+                <p><a class="btn btn-primary" href="/translation/upload">Upload To Saas-Localization</a></p>
+                <p><a class="btn btn-info" href="/translation/download">Download from Saas-Localization</a></p>
+            </div>
+HT;
               $projects = ['portal', 'myaccount', 'iosliteclient', 'temmandroid', 'ioclient'];
               foreach($projects as $p) {
                 echo <<<HT
-                <div class="col-lg-2">
-                <a class="btn btn-primary" href="/translation/upload?project=$p">Upload $p To Transifex</a>
-                <a class="btn btn-info" href="/translation/download?project=$p">Download $p From Transifex</a>
-                <a class="btn btn-info" href="/site/upload?project=$p">Upload $p To Saas-Localization</a>
-                <a class="btn btn-warning" href="/translation/projectdetails?project=$p">Show $p Details</a>
+                <div class="col-lg-3">
+                <p><a class="btn btn-primary" href="/translation/uploadtotransifex?project=$p">Upload $p To Transifex</a></p>
+                <p><a class="btn btn-info" href="/translation/downloadfromtransifex?project=$p">Download $p From Transifex</a></p>
+                <p><a class="btn btn-warning" href="/translation/projectdetails?project=$p">Show $p Details</a></p>
             </div>
 HT;
               }
+              
             ?>
         </div>
     </div>

@@ -446,6 +446,7 @@ return array(
   "message-Password_Requirements_Rule_2_1" => "One lower-case letter",
   "message-Password_Requirements_Rule_2_2" => "One upper-case letter",
   "message-Password_Requirements_Rule_2_3" => "One number",
+  "message-Password_Requirements_Rule_2_4" => "One special character",
   "message-Phone_Number" => "फोन नंबर",
   "message-Phone_Numbers" => "Phone Numbers",
   "message-Placeholder_enter_by_type" => "Enter a valid %(type)s",

@@ -24,6 +24,7 @@ class Agent {
   protected $errorNo;
   protected $curlInfo;
   private $headers;
+  protected $rawheaders; //capitalized version of the headers because they come in mixed case
   private $requestStr = "";
   private $reqObj;
   private $reqId = "ERROR__REQUEST_ID_WAS_NOT_SET";
@@ -36,7 +37,22 @@ class Agent {
     $this->server = $this->configManager->getDefaultServer();
     $this->ssl = $this->configManager->getSSL();
     $this->headers = $this->configManager->getAllHeaders(); //Yii::app()->request->getAllHeaders();
+    $this->rawheaders = $this->setRequestIdFromHeaders();
     $this->timer = new Timer();
+  }
+  
+  private function setRequestIdFromHeaders() {
+    $rawheaders = [];
+    if (is_array($this->headers)) {
+      $rawheaders = array_change_key_case($this->headers, CASE_UPPER);
+    }
+    if (isset($rawheaders['X-IO-REQUEST-ID'])) {
+      $requestId = $rawheaders['X-IO-REQUEST-ID'];
+      $this->reqId = $requestId;
+      $this->requestStr = "for X-IO-REQUEST-ID $requestId";
+    }
+    
+    return $rawheaders;
   }
 
   protected function setCurlOptions($option, $value, $code) {
@@ -64,14 +80,7 @@ class Agent {
   }
 
   private function logRequest($request) {
-    if (is_array($this->headers)) {
-      $rawheaders = array_change_key_case($this->headers, CASE_UPPER);
-    }
-    if (isset($rawheaders['X-IO-REQUEST-ID'])) {
-      $requestId = $rawheaders['X-IO-REQUEST-ID'];
-      $this->reqId = $requestId;
-      $this->requestStr = "for X-IO-REQUEST-ID $requestId";
-    }
+    $rawheaders = $this->rawheaders;
     if (isset($rawheaders) && isset($rawheaders['X-IO-SIMDB']) && $rawheaders['X-IO-SIMDB'] == true) {
       AppLog::log('Request HEADERS: ' . print_r($rawheaders, true), 'info', 'application');
     }

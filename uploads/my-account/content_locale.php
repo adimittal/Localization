@@ -413,7 +413,7 @@
   "change_Plan_Allowances" => "Change Plan Allowances",
   "assign_Bundle" => "Assign Bundle",
   "title-Back_Bundle_Details" => "Back to Bundle Details",
-  "title-Back_Plan_Details" => "Back to plan details",
+  "title-Back_Plan_Details" => "Back to Plan Details",
   "title-Assign_To_Device" => "Assign to a device",
   "label-All_Plan_Share" => "You are changing the share limit for all these plans:",
   "label-All_Plan_Assign" => "You are assigning all these plans:",

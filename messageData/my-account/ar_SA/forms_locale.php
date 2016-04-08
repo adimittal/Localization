@@ -20,6 +20,8 @@ return array(
   "btn-Delete_Card" => "نعم، قم بإزالة هذه البطاقة",
   "btn-Remove_Card_Confirm" => "إزالة",
   "btn-Login" => "تسجيل الدخول",
+  "btn-Sadad_Login" => "تسجيل الدخول ",
+  "btn-Go" => "Go",
   "btn-Next" => "التالي",
   "btn-Return_To_Login_Screen" => "العودة إلى صفحة تسجيل الدخول",
   "btn-Save" => "حفظ",
@@ -65,6 +67,6 @@ return array(
   "btn-Remove-Subscriber" => "إزالة المشترك",
   "btn-Buy" => "شراء",
   "btn-tryAgain" => "حاول مرة ثانية",
-  "title-OOBE_Verify_OTP" => "أدخل رمز OTP",
+  "title-OOBE_Verify_OTP" => "Enter OTP code *",
   "btn-Add" => "أضف",
 );

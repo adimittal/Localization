@@ -55,8 +55,10 @@ return array(
   "message-System_Error" => "فيه خطأ بالنظام",
   "message-Confirm_Remove_Subscriber" => "متأكد من إزالة هذا المشترك",
   "message-TopUpPin_Not_Found" => "الرمز غير موجود",
-  "message-TopUpPin_Success" => "تمت إضافة المبلغ لرصيدك",
+  "message-TopUpPin_Success" => "%(amount)s was added to your account balance.",
+  "message-TopUpPin_Required" => "رقم البطاقة مطلوب",
   "message-TopUpPin_Not_Valid" => "الرمز غير صحيح",
+  "message-TopUpSadad_Success" => "تم إضافة المبلغ عن طريق سداد بنجاح.",
   "message-Uncancel_Subcription_Success" => "راح يتم تجديد الباقة في نهاية دورة الاستخدام الحالية.",
   "message-AccountNotificationLanguage_Fail" => "حصل خطأ في تحديث لغة التنبيهات",
   "message-AccountNotificationLanguage_Success" => "تم تغيير لغة التنبيهات",
@@ -146,4 +148,5 @@ return array(
   'message-Expried_Plan_Error' => 'الباقة منتهية أو غير موجودة.',
   'message-Verify_OTP_InCorrect' => 'الرمز خطأ. يا ليت تكتب الرمز اللي استملته في الرسالة.',
   "message-Join_Device_Successful"=> "Joinning subscriber is in process: Your order is on its way and will be available soon.",
+  "message-The_Popup_Blocked" => "The popup was blocked. You must allow popups to use this site."
 );

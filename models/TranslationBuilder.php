@@ -55,7 +55,7 @@ class TranslationBuilder {
   }
   
   public function slugifyResource() {
-    $this->resourceSlug = $this->slugify($this->resourceName);
+    return $this->resourceSlug = $this->slugify($this->resourceName);
   }
   
   /**
