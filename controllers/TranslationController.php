@@ -74,7 +74,7 @@ class TranslationController extends BaseController {
   
   /**
    * Upload translations to this localization repo
-   * curl -X POST -H "Content-type: multipart/form-data" -H "Accept: application/json" -F 'UploadForm[project]=myaccount' -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/content_locale.php -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/forms_locale.php http://localization.dev.itsonsaas.net:8000/translation/upload?project=myaccount
+   * curl -X POST -H "Content-type: multipart/form-data" -H "Accept: application/json" -F 'UploadForm[project]=myaccount' -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/content_locale.php -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/forms_locale.php http://localization.dev.itsonsaas.net:8000/translation/upload
    * @return string
    */
     public function actionUpload() {
