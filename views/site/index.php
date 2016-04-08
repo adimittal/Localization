@@ -24,7 +24,8 @@ $this->title = 'Saas Localization';
             <?php
             echo <<<HT
               <br /><br />
-              <div class="col-lg-4">
+              <div class="col-lg-3">
+                <h3>Common links for all projects</h3>
                 <p><a class="btn btn-primary" href="/README.php?project=myaccount&host=http://hercules.dev.itsoninc.com:55578">Readme for Curl calls</a></p>
                 <p><a class="btn btn-primary" href="/translation/upload">Upload To Saas-Localization</a></p>
                 <p><a class="btn btn-info" href="/translation/download">Download from Saas-Localization</a></p>
@@ -34,6 +35,8 @@ HT;
               foreach($projects as $p) {
                 echo <<<HT
                 <div class="col-lg-3">
+                                  <h3>$p</h3>
+
                 <p><a class="btn btn-primary" href="/translation/uploadtotransifex?project=$p">Upload $p To Transifex</a></p>
                 <p><a class="btn btn-info" href="/translation/downloadfromtransifex?project=$p">Download $p From Transifex</a></p>
                 <p><a class="btn btn-warning" href="/translation/projectdetails?project=$p">Show $p Details</a></p>
