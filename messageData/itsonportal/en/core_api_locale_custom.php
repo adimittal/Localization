@@ -9,6 +9,7 @@ return array(
   "status-account_address_modified" => "account_address_modified",
   "status-account_challenge_question_changed" => "account_challenge_question_changed",
   "status-account_created" => "account_created",
+  "status-account_credited" => "account_credited",
   "status-account_cycled" => "account_cycled",
   "status-account_email_modified" => "account_email_modified",
   "status-account_password_changed" => "account_password_changed",

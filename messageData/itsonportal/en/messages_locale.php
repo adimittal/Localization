@@ -527,4 +527,8 @@ return array(
   "message-Datatable_Problem_Loading" => "There was a problem loading the table data. Please try again.",
   "message-Success_Worker_Pool_Config_Changed" => "Worker Pool Configuration changed.",
   "message-Error_Worker_Pool_Config_Change_Failed" => "One or more changes could not be saved. Please try again.",
+  "message-Notify_Account_Becoming_Single_Subscriber" => "%(phoneNumber)s will receive 100&#37; of this plan’s allocation when the plan cycles.",
+  "message-Notify_Unjoined_Subscriber_From_Account" => "This subscriber has been unjoined from the account.",
+  "message-Notify_Unjoined_Subscriber_With_Recurring_Plan_For_Hard_Allocation" => "This subscriber has been unjoined from the account. When this plan cycles, they will be removed from this list and their allocation will be freed for use by other subscribers.",
+  "message-Notify_Unjoined_Subscriber_With_Recurring_Plan_For_Pinata" => "This subscriber has been unjoined from the account. When this plan cycles, they will be removed from this list."
 );

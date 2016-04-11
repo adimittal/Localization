@@ -26,7 +26,7 @@ $this->title = 'Saas Localization';
               <br /><br />
               <div class="col-lg-3">
                 <h3>Common links for all projects</h3>
-                <p><a class="btn btn-primary" href="/README.php?project=myaccount&host=http://hercules.dev.itsoninc.com:55578">Readme for Curl calls</a></p>
+                <p><a class="btn btn-primary" href="/translation/readme?project=portal&host=http://localization.dev.itsonsaas.net:8000">Readme for Curl calls</a></p>
                 <p><a class="btn btn-primary" href="/translation/upload">Upload To Saas-Localization</a></p>
                 <p><a class="btn btn-info" href="/translation/download">Download from Saas-Localization</a></p>
             </div>

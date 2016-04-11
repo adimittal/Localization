@@ -21,6 +21,10 @@ class TranslationController extends BaseController {
     parent::init();
     $this->model = new Translation();
   }
+  
+  public function actionReadme() {
+    return $this->render('readme', ['model' => $this->model]);
+  }
 
   /**
    * Get the details of the project
@@ -30,22 +34,25 @@ class TranslationController extends BaseController {
     $project = $_GET['project'];
     return json_encode($this->model->getProjectDetails($project));
   }
-  
+
   /**
-   * Get the details of the portal project
+   * Get the resources of the project
    * @return type
    */
-  public function actionPortalresources() {
-    return json_encode($this->model->getProjectResources('portal'));
+  public function actionResources() {
+    $project = $_GET['project'];
+    return json_encode($this->model->getProjectResources($project));
   }
+
   /**
-   * Get the details of the portal project
+   * Get the resource filenames of the project
    * @return type
    */
-  public function actionPortalresourcefilenames() {
-    return json_encode($this->model->getProjectResourceFileNames('portal'));
+  public function actionResourcefilenames() {
+    $project = $_GET['project'];
+    return json_encode($this->model->getProjectResourceFileNames($project));
   }
-  
+
   /**
    * Download translations from transifex
    * Query parameter project: portal, myaccount, iosliteclient, temmandroid, ioclient
@@ -54,14 +61,14 @@ class TranslationController extends BaseController {
   public function actionDownloadfromtransifex() {
     $project = $_GET['project'];
     $error = new \app\components\Error();
-    
-    if($this->model->downloadTranslationsFromTransifex($project)) {
+
+    if ($this->model->downloadTranslationsFromTransifex($project)) {
       return json_encode($error);
     }
     $error->fail("Failed to download the files from transifex to localization repo");
     return json_encode($error);
   }
-  
+
   /**
    * Upload translations to transifex
    * Query parameter project: portal, myaccount, iosliteclient, temmandroid, ioclient
@@ -71,13 +78,13 @@ class TranslationController extends BaseController {
     $project = $_GET['project'];
     return json_encode($this->model->uploadResourcesInTransifex($project));
   }
-  
+
   /**
    * Upload translations to this localization repo
    * curl -X POST -H "Content-type: multipart/form-data" -H "Accept: application/json" -F 'UploadForm[project]=myaccount' -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/content_locale.php -F UploadForm[messageFiles][]=@/git/saas-my-adi/yii/messages/myAccount/en/forms_locale.php http://localization.dev.itsonsaas.net:8000/translation/upload
    * @return string
    */
-    public function actionUpload() {
+  public function actionUpload() {
     $model = new UploadForm();
     $error = new \app\components\Error();
 
@@ -85,7 +92,7 @@ class TranslationController extends BaseController {
       $model->load(Yii::$app->request->post());
       $model->messageFiles = UploadedFile::getInstances($model, 'messageFiles');
       if ($model->upload()) {
-        if(Yii::$app->request->headers->get('Accept') == 'application/json') {
+        if (Yii::$app->request->headers->get('Accept') == 'application/json') {
           return json_encode($error);
         }
         return $this->render('upload-confirm', ['model' => $model]);
@@ -98,7 +105,7 @@ class TranslationController extends BaseController {
       return $this->render('upload', ['model' => $model]);
     }
   }
-  
+
   /**
    * This action allows downloading the translations of a given project, it can be used from command line curl like so:
    * curl -X POST -d 'DownloadForm[project]=itsonportal' 'http://localization.dev.itsonsaas.net:8000/translation/download' -o itsonportal.zip -v
@@ -115,7 +122,7 @@ class TranslationController extends BaseController {
     }
     else {
       // either the page is initially displayed or there is some validation error
-      return $this->render('download', ['model' => $model]);
+      return $this->render('download',  ['model' => $model]);
     }
   }
 
