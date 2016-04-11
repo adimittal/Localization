@@ -22,7 +22,7 @@ $this->title = 'Saas Localization';
         <div class="row">
             
             <?php
-            switch($SERVER['SERVER_NAME']) {
+            switch($_SERVER['SERVER_NAME']) {
               case 'localization.dev.itsonsaas.net' :
                 $host = "http://localization.dev.itsonsaas.net:8000";
               case 'hercules.dev.itsoninc.com' :
