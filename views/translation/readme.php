@@ -2,6 +2,8 @@
 
 use app\models\Translation;
 
+echo "Parameters you can specify in url are project, host, and resourcePath";
+
 $localhost = "http://localization.dev.itsonsaas.net:8000";
 $host = "http://hercules.dev.itsoninc.com:55578";
 
