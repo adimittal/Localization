@@ -1,0 +1,10 @@
+CREATE TABLE `transifex_projects` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT,
+`customer_id` int(11) ,
+`project_name` varchar(255) ,
+`file` varchar(255) ,
+`language` varchar(255) ,
+`createdtime` TIMESTAMP NOT NULL DEFAULT 0,
+`updatedtime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (`id`)
+) ENGINE = INNODB;

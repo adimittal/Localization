@@ -4,6 +4,10 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
   'id' => 'basic',
+  'aliases' => [
+    '@tests' => dirname(__DIR__) . '/tests/codeception',
+    '@app/migrations' => '@app/db/migrations',
+  ],
   'basePath' => dirname(__DIR__),
   'bootstrap' => ['log'],
   'components' => [
