@@ -125,5 +125,14 @@ class TranslationController extends BaseController {
       return $this->render('download',  ['model' => $model]);
     }
   }
+  
+  /**
+   * Update the database with the latest message data
+   */
+  public function actionDbupdate() {
+    $model = new \app\models\TranslateStore();
+    
+    return $model->dbupdate();
+  }
 
 }

@@ -13,7 +13,7 @@ class m160411_210947_create_platform extends Migration
 `createdtime` TIMESTAMP NOT NULL DEFAULT 0,
 `updatedtime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 PRIMARY KEY (`id`)
-) ENGINE = INNODB;
+) DEFAULT CHARSET=utf8 ENGINE = INNODB;
 HT;
     $this->execute($sql);
     }
